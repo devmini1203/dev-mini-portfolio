@@ -27,7 +27,6 @@
     "vue": "latest"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.5.1",
     "@tabler/icons-vue": "^2.40.0"
   }
 }
