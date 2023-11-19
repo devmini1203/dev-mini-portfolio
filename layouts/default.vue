@@ -5,9 +5,19 @@ import Drawer from '@/components/layout/default/Drawer.vue';
 </script>
 
 <template>
-  <div>
-    <slot />
+  <div class="common-layout">
+    <el-container>
+      <el-header class="default-header">
+        <Header />
+      </el-header>
+      <el-main>
+        <slot />
+      </el-main>
+      <el-footer class="default-footer">
+        <Footer />
+      </el-footer>
+    </el-container>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss" src="@/assets/scss/layout.scss"></style>

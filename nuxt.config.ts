@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@element-plus/nuxt'],
+  css: ['@/assets/scss/reset_element_ui_style.scss'],
   ssr: false,
   app: {
     baseURL: '/dev_mini_portfolio',
