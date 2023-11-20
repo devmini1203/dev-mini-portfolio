@@ -17,6 +17,8 @@ import Drawer from '@/components/layout/default/Drawer.vue';
         <Footer />
       </el-footer>
     </el-container>
+
+    <Drawer />
   </div>
 </template>
 
