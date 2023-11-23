@@ -1,0 +1,81 @@
+/**
+* ! Pretendard Font Family!
+*/
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/assets/fonts/Pretendard/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url('/assets/fonts/Pretendard/Pretendard-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('/assets/fonts/Pretendard/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: bold;
+}
+
+/**
+  * ! Noto Sans KR  Font Family!
+  */
+@font-face {
+  font-family: 'NotoSansKR-Thin';
+  src: url('/assets/fonts/NotoSansKR/NotoSansKR-Thin.ttf');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotoSansKR-ExtraLight';
+  src: url('/assets/fonts/NotoSansKR/NotoSansKR-ExtraLight.ttf');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotoSansKR-Light';
+  src: url('/assets/fonts/NotoSansKR/NotoSansKR-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotoSansKR-Regular';
+  src: url('/assets/fonts/NotoSansKR/NotoSansKR-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotoSansKR-Medium';
+  src: url('/assets/fonts/NotoSansKR/NotoSansKR-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotoSansKR-SemiBold';
+  src: url('/assets/fonts/NotoSansKR/NotoSansKR-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotoSansKR-Bold';
+  src: url('/assets/fonts/NotoSansKR/NotoSansKR-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NotoSansKR-ExtraBold';
+  src: url('/assets/fonts/NotoSansKR/NotoSansKR-ExtraBold.ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
