@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@tabler/icons-vue": "^2.40.0",
-    "@vueuse/core": "^10.6.1"
+    "@vueuse/core": "^10.6.1",
+    "swiper": "^11.0.5"
   }
 }
