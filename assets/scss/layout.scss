@@ -1,0 +1,37 @@
+.default-layout {
+  .default-header {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 70rem;
+    height: 4.5rem;
+    padding: 1.25rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    ::v-deep(.my-name-box) {
+      // 애플 폰트 추가시 적용
+      font-size: 24px;
+    }
+
+    ::v-deep(.portfolio-menu-parent-box) {
+      display: flex;
+      gap: 16px;
+
+      .child-box {
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+
+  .default-footer {
+    /*    position: absolute;
+    bottom: 0px; */
+  }
+}
