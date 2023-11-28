@@ -1,16 +1,20 @@
 <script lang="ts" setup>
 import Header from '@/components/layout/default/Header.vue';
 import Footer from '@/components/layout/default/Footer.vue';
+
+const ch = () => {
+  console.log('ccc');
+};
 </script>
 
 <template>
   <div class="default-layout">
     <el-container>
       <el-header>
-        <Header />
+        <Header @ch="ch" />
       </el-header>
       <el-main>
-        <slot />
+        <slot 2 />
       </el-main>
       <el-footer>
         <Footer />

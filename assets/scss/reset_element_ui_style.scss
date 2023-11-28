@@ -1,5 +1,8 @@
 .el-header {
   padding: 0px !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
 }
 .el-footer {
   padding: 0px !important;
