@@ -1,11 +1,20 @@
 <script lang="ts" setup>
+import useCommonComposable from '@/composables/commonComposable';
+
+const { queryBinder } = useCommonComposable();
+
+const router = useRouter();
+
 const myName = ref('Jong Min');
-const portfolioMenu = ref([{ menuName: 'About me' }, { menuName: 'Skills' }, { menuName: 'Projects' }, { menuName: 'Career' }]);
+const portfolioMenu = ref([
+  { menuName: 'About me', query: 'aboutMe' },
+  { menuName: 'Skills', query: 'skills' },
+  { menuName: 'Projects', query: 'projects' },
+  { menuName: 'Career', query: 'career' }
+]);
 
-const emits = defineEmits(['ch']);
-
-const ch = () => {
-  emits('ch');
+const getComponentNameToQuery = (query: string) => {
+  router.push({ path: '/', query: { co: query } });
 };
 </script>
 
@@ -16,7 +25,7 @@ const ch = () => {
     </div>
 
     <div class="portfolio-menu-parent-box">
-      <div v-for="menu in portfolioMenu" :key="menu.menuName" class="child-box" @click="ch">
+      <div v-for="menu in portfolioMenu" :key="menu.menuName" class="child-box" @click="getComponentNameToQuery(menu.query)">
         {{ menu.menuName }}
       </div>
     </div>
