@@ -19,13 +19,17 @@ const skillsRef = ref<HTMLElement | null>(null);
 const projectsRef = ref<HTMLElement | null>(null);
 const careerRef = ref<HTMLElement | null>(null);
 
+const moveToTop = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+};
+
 watch(
   () => routeQuery.value,
-  (newValue, old) => {
-    if (newValue === 'aboutMe') aboutMeRef.value?.scrollIntoView({ behavior: 'smooth' });
-    if (newValue === 'skills') skillsRef.value?.scrollIntoView({ behavior: 'smooth' });
-    if (newValue === 'projects') projectsRef.value?.scrollIntoView({ behavior: 'smooth' });
-    if (newValue === 'career') careerRef.value?.scrollIntoView({ behavior: 'smooth' });
+  (newVal, oldVal) => {
+    if (newVal === 'aboutMe') aboutMeRef.value?.scrollIntoView({ behavior: 'smooth' });
+    if (newVal === 'skills') skillsRef.value?.scrollIntoView({ behavior: 'smooth' });
+    if (newVal === 'projects') projectsRef.value?.scrollIntoView({ behavior: 'smooth' });
+    if (newVal === 'career') careerRef.value?.scrollIntoView({ behavior: 'smooth' });
   }
 );
 </script>
@@ -47,9 +51,10 @@ watch(
     <Career />
   </div>
 
-  <div style="position: fixed; bottom: 10px; right: 10px">
-    <component :is="IconSquareRoundedArrowUpFilled" style="width: 40px; height: 40px" />
+  <!-- 최상단 스크롤 버튼  -->
+  <div class="move-to-top-button-container">
+    <component class="arrow-button" :is="IconSquareRoundedArrowUpFilled" @click="moveToTop" />
   </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style lang="scss" src="@/assets/scss/main.scss"></style>

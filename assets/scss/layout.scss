@@ -12,6 +12,7 @@
     ::v-deep(.my-name-box) {
       // 애플 폰트 추가시 적용
       font-size: 24px;
+      color: ffffff;
     }
 
     ::v-deep(.portfolio-menu-parent-box) {
@@ -22,9 +23,12 @@
         font-size: 1.2rem;
         cursor: pointer;
         transition: 0.5s;
+        opacity: 0.6;
+        color: #ffffff;
 
         &:hover {
-          color: red;
+          opacity: 1;
+          color: ffffff;
         }
       }
     }
