@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="banner-container" ref="fff">
+  <div class="banner-container">
     <div class="banner-title-box">
       <div class="top-text-box">
         <h1>Welocme!</h1>
