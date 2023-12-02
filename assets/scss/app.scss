@@ -1,4 +1,5 @@
 @use 'fonts.scss';
+@use 'main.scss';
 
 @keyframes gradient {
   0% {
@@ -12,14 +13,23 @@
   }
 }
 
+.fade-in-out-move-to-top-button-enter-active {
+  transition: all 0.5s ease-out;
+}
+.fade-in-out-move-to-top-button-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.fade-in-out-move-to-top-button-enter-from,
+.fade-in-out-move-to-top-button-leave-to {
+  opacity: 0;
+}
 html,
 body {
   width: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Pretendard';
-
   background: linear-gradient(65deg, #2a153d, #6f41b6, #4e95e2, #18d3a7);
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 8s ease infinite;
 }

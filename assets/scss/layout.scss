@@ -1,41 +1,123 @@
 .default-layout {
   .default-header {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 70rem;
-    height: 4.5rem;
-    padding: 1.25rem 2rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: transparent;
 
-    ::v-deep(.my-name-box) {
-      // 애플 폰트 추가시 적용
-      font-size: 24px;
-      color: ffffff;
-    }
-
-    ::v-deep(.portfolio-menu-parent-box) {
+    ::v-deep(.header-content) {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 70rem;
+      height: 4.5rem;
+      padding: 1.25rem 2rem;
+      margin: 0 auto;
       display: flex;
-      gap: 24px;
+      justify-content: space-between;
+      background-color: transparent;
 
-      .child-box {
-        font-size: 1.2rem;
-        cursor: pointer;
-        transition: 0.5s;
-        opacity: 0.6;
+      .my-name-box {
+        // 애플 폰트 추가시 적용
+        font-size: 24px;
         color: #ffffff;
+        font-weight: bold;
+      }
 
-        &:hover {
-          opacity: 1;
-          color: ffffff;
+      .portfolio-menu-parent-box {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        /*      transition: all 1s ease-in-out; */
+
+        .child-box {
+          font-size: 1.2rem;
+          cursor: pointer;
+          transition: 0.5s;
+          opacity: 0.6;
+          color: #ffffff;
+
+          &:hover {
+            opacity: 1;
+            transition: all 1s;
+            color: ffffff;
+          }
         }
       }
     }
   }
+  .default-header-scroll {
+    transition: all 0.3s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #ffffff;
 
+    ::v-deep(.header-content) {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 70rem;
+      height: 4.5rem;
+      padding: 1.25rem 2rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .my-name-box {
+        // 애플 폰트 추가시 적용
+        font-size: 24px;
+        color: #000000;
+        font-weight: bold;
+      }
+
+      .portfolio-menu-parent-box {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+
+        .child-box {
+          font-size: 1.2rem;
+          cursor: pointer;
+          transition: 0.5s;
+          opacity: 0.4;
+          font-weight: bold;
+          color: #000000;
+
+          &:hover {
+            opacity: 1;
+            transition: all 0.8s linear;
+            color: ffffff;
+          }
+        }
+      }
+    }
+  }
   .default-footer {
-    /*    position: absolute;
-    bottom: 0px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* 수직으로 배치 */
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+    ::v-deep(.footer-icon-box) {
+      width: 100%;
+
+      .footer-icon {
+        width: 35px;
+        height: 35px;
+        color: #ffffff;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+      }
+    }
+
+    ::v-deep(.footer-copyright-box) {
+      width: 100%;
+      color: #ffffff;
+      align-items: center;
+      font-weight: bold;
+    }
   }
 }

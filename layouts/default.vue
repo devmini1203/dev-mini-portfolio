@@ -1,20 +1,18 @@
 <script lang="ts" setup>
+const props = defineProps<{
+  scrollHeight: number;
+}>();
+
 import Header from '@/components/layout/default/Header.vue';
 import Footer from '@/components/layout/default/Footer.vue';
-
-const ch = () => {
-  console.log('ccc');
-};
 </script>
 
 <template>
   <div class="default-layout">
     <el-container>
-      <el-header>
-        <Header @ch="ch" />
-      </el-header>
+      <Header :scrollHeight="scrollHeight" />
       <el-main>
-        <slot 2 />
+        <slot />
       </el-main>
       <el-footer>
         <Footer />

@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="about-me-container">Component: /main/AboutMe</div>
+  <div class="about-me-container"></div>
 </template>
 
 <style scoped></style>
