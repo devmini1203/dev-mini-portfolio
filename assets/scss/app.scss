@@ -1,18 +1,6 @@
 @use 'fonts.scss';
 @use 'main.scss';
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .fade-in-out-move-to-top-button-enter-active {
   transition: all 0.5s ease-out;
 }
@@ -23,12 +11,28 @@
 .fade-in-out-move-to-top-button-leave-to {
   opacity: 0;
 }
+
 html,
 body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Pretendard';
+}
+
+#app {
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  font-family: 'AppleSDGothicNeoB';
   background: linear-gradient(65deg, #2a153d, #6f41b6, #4e95e2, #18d3a7);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;

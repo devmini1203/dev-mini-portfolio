@@ -79,3 +79,31 @@
   font-style: normal;
   font-display: swap;
 }
+
+/**
+  * ! AppleSDGothic  Font Family!
+  */
+@font-face {
+  font-family: 'AppleSDGothicNeoB';
+  src: url('/assets/fonts/AppleSDGothicNeoB.ttf');
+}
+@font-face {
+  font-family: 'AppleSDGothicNeoEB';
+  src: url('/assets/fonts/AppleSDGothicNeoEB.ttf');
+}
+@font-face {
+  font-family: 'AppleSDGothicNeoH';
+  src: url('/assets/fonts/AppleSDGothicNeoH.ttf');
+}
+@font-face {
+  font-family: 'AppleSDGothicNeoM';
+  src: url('/assets/fonts/AppleSDGothicNeoM.ttf');
+}
+@font-face {
+  font-family: 'AppleSDGothicNeoR';
+  src: url('./assets/fonts/AppleSDGothicNeoR.ttf');
+}
+@font-face {
+  font-family: 'AppleSDGothicNeoSB';
+  src: url('/assets/fonts/AppleSDGothicNeoSB.ttf');
+}

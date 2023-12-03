@@ -25,7 +25,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div>
+  <div id="app">
     <NuxtLayout :scrollHeight="scrollHeight">
       <Banner />
       <AboutMe />
