@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { IconSquareRoundedArrowUpFilled } from '@tabler/icons-vue';
 
-import Banner from '@/components/main/Banner.vue';
-import Skills from '@/components/main/Skills.vue';
-import Projects from '@/components/main/Projects.vue';
-import Career from '@/components/main/Career.vue';
-import AboutMe from '@/components/main/AboutMe.vue';
+import Banner from '@/components/content/Banner.vue';
+import Skills from '@/components/content/Skills.vue';
+import Projects from '@/components/content/Projects.vue';
+import Career from '@/components/content/Career.vue';
+import AboutMe from '@/components/content/AboutMe.vue';
 
 const moveToTop = () => {
   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
