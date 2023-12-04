@@ -16,9 +16,15 @@ const setScrollHeight = () => {
   scrollHeight.value = window.scrollY;
 };
 
+/**
+ * 스크롤 이벤트 등록
+ */
 onMounted(() => {
   window.addEventListener('scroll', setScrollHeight);
 });
+/**
+ * 스크롤 이벤트 제거
+ */
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', setScrollHeight);
 });
