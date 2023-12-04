@@ -30,9 +30,7 @@ const footerIcon = ref([
       </el-tooltip>
     </div>
 
-    <div class="footer-copyright-box">
-      <p>© 2023. Baek Jong Min. All rights reserved.</p>
-    </div>
+    <div class="footer-copyright-box">© 2023. Baek Jong Min. All rights reserved.</div>
   </div>
 </template>
 
