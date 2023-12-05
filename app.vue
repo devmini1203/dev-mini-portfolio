@@ -32,7 +32,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div id="app">
-    <NuxtLayout :scrollHeight="scrollHeight" name="default">
+    <NuxtLayout :scrollHeight="scrollHeight">
       <Banner />
       <AboutMe />
       <Skills />
