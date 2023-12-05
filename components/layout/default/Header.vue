@@ -23,10 +23,25 @@ const getComponentNameToQuery = (id: number) => {
     document.querySelector('.career-container')?.scrollIntoView({ behavior: 'smooth' });
   }
 };
+
+/**
+ * about-me 컨테이너의 clientHeight 과 App.vue의 scrollHeight을 비교하여 적용할 클래스명을 리턴한다.
+ */
+const dynamicHeaderclass = computed(() => {
+  debugger;
+  const aboutMeHeight = document.getElementsByClassName('about-me-container')[0];
+  const componentTopHeight = Number((aboutMeHeight as HTMLElement)?.offsetTop);
+
+  if (props.scrollHeight >= componentTopHeight) {
+    return 'default-header-scroll';
+  } else {
+    return 'default-header';
+  }
+});
 </script>
 
 <template>
-  <div :class="scrollHeight >= 800 ? 'default-header-scroll' : 'default-header'">
+  <div :class="dynamicHeaderclass">
     <div class="header-content">
       <div class="my-name-box">
         {{ myName }}

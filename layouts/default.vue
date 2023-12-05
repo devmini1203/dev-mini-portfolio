@@ -15,4 +15,4 @@ import Footer from '@/components/layout/default/Footer.vue';
   </div>
 </template>
 
-<style scoped lang="scss" src="@/assets/scss/layout.scss"></style>
+<style scoped src="@/assets/scss/layout.scss"></style>

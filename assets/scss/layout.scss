@@ -3,7 +3,6 @@
     transition: all 0.3s ease-in-out;
     position: fixed;
     top: 0;
-    bottom: 0;
     right: 0;
     left: 0;
     z-index: 9999;
@@ -18,7 +17,6 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
-      background-color: transparent;
 
       .my-name-box {
         // 애플 폰트 추가시 적용
@@ -51,8 +49,11 @@
   }
   .default-header-scroll {
     transition: all 0.3s ease-in-out;
-    position: sticky;
+    position: fixed;
+    position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     z-index: 9999;
     background-color: #ffffff;
 
