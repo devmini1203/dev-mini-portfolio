@@ -28,7 +28,6 @@ const getComponentNameToQuery = (id: number) => {
  * about-me 컨테이너의 clientHeight 과 App.vue의 scrollHeight을 비교하여 적용할 클래스명을 리턴한다.
  */
 const dynamicHeaderclass = computed(() => {
-  debugger;
   const aboutMeHeight = document.getElementsByClassName('about-me-container')[0];
   const componentTopHeight = Number((aboutMeHeight as HTMLElement)?.offsetTop);
 
