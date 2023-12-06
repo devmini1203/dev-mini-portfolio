@@ -1,5 +1,6 @@
 @use 'fonts.scss';
 @use 'content.scss';
+@use 'transition.scss';
 
 html,
 body {
@@ -49,18 +50,3 @@ body {
     animation: arrowButtonAnimation 1s /* 속도 */ linear 0s /* 처음부터 끝까지 일정 속도로 진행 */ infinite alternate; /* 무한 반복 */
   }
 }
-
-/**
- * 최상단 이동 버튼 Transition CSS
- */
-/* .fade-in-out-move-to-top-button-enter-active {
-  transition: all 0.5s ease-out;
-}
-.fade-in-out-move-to-top-button-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
-}
-.fade-in-out-move-to-top-button-enter-from,
-.fade-in-out-move-to-top-button-leave-to {
-  opacity: 0;
-}
- */
