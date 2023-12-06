@@ -41,11 +41,11 @@ onBeforeUnmount(() => {
     </NuxtLayout>
 
     <!-- 최상단 이동 버튼  -->
-    <Transition name="fade-in-out-move-to-top-button">
-      <div class="move-to-top-button-container" v-if="scrollHeight >= 80">
-        <component class="arrow-button" :is="IconSquareRoundedArrowUpFilled" @click="moveToTop" />
-      </div>
-    </Transition>
+    <!--    <Transition name="fade-in-out-move-to-top-button"> -->
+    <div class="move-to-top-button-container" v-if="scrollHeight >= 80">
+      <component class="arrow-button" :is="IconSquareRoundedArrowUpFilled" @click="moveToTop" />
+    </div>
+    <!--   </Transition> -->
   </div>
 </template>
 
