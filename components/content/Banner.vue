@@ -5,7 +5,7 @@ import { IconChevronsDown } from '@tabler/icons-vue';
  * About Me 컨텐츠로 이동
  */
 const moveToAboutMeContent = () => {
-  document.querySelector('.about-me-container')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  document.querySelector('.about-me-container')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 </script>
 
