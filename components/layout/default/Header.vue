@@ -31,7 +31,7 @@ const dynamicHeaderclass = computed(() => {
   const aboutMeHeight = document.getElementsByClassName('about-me-container')[0];
   const componentTopHeight = Number((aboutMeHeight as HTMLElement)?.offsetTop);
 
-  if (props.scrollHeight >= componentTopHeight) {
+  if (props.scrollHeight >= componentTopHeight - 100) {
     return 'default-header-scroll';
   } else {
     return 'default-header';
