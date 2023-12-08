@@ -11,6 +11,9 @@
     color: white;
 
     .top-text-box {
+      -webkit-text-stroke: 0.7px #fff;
+      opacity: 1;
+      color: transparent;
       animation-duration: 2s;
       animation-name: topTextAnimation;
     }

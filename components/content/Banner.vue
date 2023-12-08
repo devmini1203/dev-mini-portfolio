@@ -12,7 +12,7 @@ const moveToAboutMeContent = () => {
 <template>
   <div class="banner-container">
     <div class="banner-title-box">
-      <div class="top-text-box">Welocme!</div>
+      <div class="top-text-box">WELCOME!</div>
 
       <div class="bottom-text-box">JONGMIN'S PORTFOLIO</div>
     </div>
