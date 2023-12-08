@@ -59,21 +59,32 @@ const basicInfo = ref([
         </div>
       </div>
 
-      <div style="display: flex; color: white; justify-content: center; width: 100%; padding-top: 6rem; gap: 30px; max-width: 71.25rem">
-        <div>
-          <NuxtImg src="/img/profile_image.jpg" sizes="360" />
+      <div class="my-introduction-box">
+        <div class="my-profile-img-box">
+          <NuxtImg src="/img/profile_image.jpg" sizes="420" />
         </div>
 
-        <div>
-          <div>
-            <p style="text-align: center; font-size: 1.2rem">느리지만 꾸준하게</p>
-            <br />
-            <p>반갑습니다. 3년차 프론트엔드 개발자 백종민 입니다.</p>
-            <p>저는 현재 [오토닉스] 부산 본사의 전산실에서 보람차고 뿌듯한 하루하루를 보내고 있습니다.</p>
-            <p>현 회사는 제가 입사할 때 각종 레거시한 프로젝트들을 걷어내고 최신 웹 기술을 적용하는 과도기 였고</p>
-            <p>이를 위해, 채택한 프레임워크는 Vue.js 였으며 이것이 프론트엔드 개발자로서 접한 첫 프레임워크였습니다.</p>
-            <br />
-          </div>
+        <div class="my-story-text-box">
+          <p class="title">포기하지않고 끈질기게</p>
+          <br />
+          <p>반갑습니다. 3년차 프론트엔드 개발자 백종민 입니다.</p>
+          <p>저는 현재 부산 소재의 한 중견 기업 전산실에서 보람차고 뿌듯한 하루하루를 보내고 있습니다.</p>
+          <p>현재 재직중인 회사는 제가 입사할 때 각종 레거시한 프로젝트들을 걷어내고 최신 웹 기술을 적용하는 과도기 였고</p>
+          <p>이를 위해, 채택한 프레임워크는 Vue2 였으며 이것이 프론트엔드 개발자로서 접한 첫 프레임워크였습니다.</p>
+          <br />
+          <p>저는 지금까지 다양한 프로젝트를 개발 및 유지보수해왔고</p>
+          <p>
+            그 과정에서 Vue3를 포함하여 Nuxt 등 다양한 JavaScript 프레임워크를 익히게 되었으며 BootstrapVue, Vuetify, ElementPlus 등의 다양한 UI 프레임워크도
+            경험하게 되었습니다
+          </p>
+          <p>현재는 SpringBoot와 PL/SQL을 통한 백엔드 개발도 함께 맡아 하고 있습니다.</p>
+          <br />
+          <P>입사 후 곧장 프로젝트에 투입되어 개발을 진행하며 수 많은 시행착오와 어려움이 있었습니다.</P>
+          <P>다양한 프로젝트를 진행해오며 남들보다 모자란 실력에 주눅이 들기도 했고 반대로 그것에 동기부여가 되었던 적도 있었습니다.</P>
+          <P>가끔은 쉽게 구현되지 않는 기능과 화면들에 좌절도 했지만 조금은 느리더라도 포기하지 않고 노력해 결국 구현해왔습니다.</P>
+          <p class="last-sentence">
+            앞으로도 개발 중 어떠한 어려움에도 포기하지 않고 끈질기게 매달려 내가 구현하고자 하는 것을 결국은 구현해내는 개발자로 성장해갈 것 입니다.
+          </p>
         </div>
       </div>
     </div>

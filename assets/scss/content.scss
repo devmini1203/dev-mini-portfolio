@@ -122,6 +122,31 @@
       }
     }
   }
+  .my-introduction-box {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 6rem;
+    gap: 30px;
+    max-width: 71.25rem;
+
+    .profile-img-box {
+    }
+    .my-story-text-box {
+      font-size: 14px;
+
+      .title {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .last-sentence {
+        word-break: keep-all;
+      }
+    }
+  }
 }
 .skills-container {
   height: 100vh;
