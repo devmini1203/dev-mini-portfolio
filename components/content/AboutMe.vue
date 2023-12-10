@@ -1,6 +1,13 @@
 <script lang="ts" setup>
 import { IconUser, IconCalendarSmile, IconMapPin, IconPhone, IconMail, IconPencil } from '@tabler/icons-vue';
 
+const dayjs = useDayjs();
+
+const dateOfJoining = 2021;
+const currentYear = new Date().getFullYear();
+
+const myCareerYear = currentYear - dateOfJoining + 1;
+
 const basicInfo = ref([
   {
     icon: IconUser,
@@ -67,7 +74,7 @@ const basicInfo = ref([
         <div class="my-story-text-box">
           <p class="title">포기하지않고 끈질기게</p>
           <br />
-          <p>반갑습니다. 3년차 프론트엔드 개발자 백종민 입니다.</p>
+          <p>반갑습니다. 햇수로 {{ myCareerYear }}년차 프론트엔드 개발자 백종민 입니다.</p>
           <p>저는 현재 부산 소재의 한 중견 기업 전산실에서 보람차고 뿌듯한 하루하루를 보내고 있습니다.</p>
           <p>현재 재직중인 회사는 제가 입사할 때 각종 레거시한 프로젝트들을 걷어내고 최신 웹 기술을 적용하는 과도기 였고</p>
           <p>이를 위해, 채택한 프레임워크는 Vue2 였으며 이것이 프론트엔드 개발자로서 접한 첫 프레임워크였습니다.</p>
