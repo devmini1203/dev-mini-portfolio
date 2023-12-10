@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@element-plus/nuxt', '@nuxt/image'],
+  modules: ['@element-plus/nuxt', '@nuxt/image', 'dayjs-nuxt'],
   css: ['@/assets/scss/reset_element_ui_style.scss'],
   ssr: false,
   app: {
