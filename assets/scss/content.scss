@@ -218,13 +218,14 @@
         width: 100%;
         box-sizing: border-box;
         border-radius: 14px;
-        height: 19px;
+        height: 25px;
 
         .skill-percentage {
           color: white;
           text-align: right;
           border-radius: 14px;
           font-size: 14px;
+          height: 19px;
           padding-right: 10px;
           background: linear-gradient(90deg, #78ace4, #6f41b6);
           //background: #4f4f4f;
@@ -235,16 +236,54 @@
   }
 }
 .projects-container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
+
+  .title-box {
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    color: #ffffff;
+    max-width: 71.25rem;
+    margin: 6rem 20px 0px 20px;
+
+    .title {
+      border-bottom-width: 3px;
+      border-bottom-style: solid;
+      border-image: linear-gradient(90deg, #78ace4, #6f41b6);
+      border-image-slice: 1;
+    }
+  }
 }
 .career-container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: black;
+
+  .title-box {
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    color: #ffffff;
+    max-width: 71.25rem;
+    margin: 6rem 20px 0px 20px;
+
+    .title {
+      border-bottom-width: 3px;
+      border-bottom-style: solid;
+      border-image: linear-gradient(90deg, #78ace4, #6f41b6);
+      border-image-slice: 1;
+    }
+  }
+
+  .my-career-box {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    max-width: 71.25rem;
+  }
 }
