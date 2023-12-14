@@ -262,15 +262,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   background-color: black;
+  padding-bottom: 6rem;
 
   .title-box {
-    text-align: center;
     font-size: 3rem;
     width: 100%;
     color: #ffffff;
     max-width: 71.25rem;
-    margin: 6rem 20px 0px 20px;
+    margin: 6rem 0 9rem 0;
+    display: flex;
+    justify-content: center;
 
     .title {
       border-bottom-width: 3px;
@@ -281,9 +284,5 @@
   }
 
   .my-career-box {
-    display: flex;
-    align-items: center;
-    margin-top: 4rem;
-    max-width: 71.25rem;
   }
 }
