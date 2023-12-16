@@ -3,6 +3,7 @@ import { IconSquareRoundedArrowUpFilled } from '@tabler/icons-vue';
 
 import Banner from '@/components/content/Banner.vue';
 import Skills from '@/components/content/Skills.vue';
+import Archiving from '@/components/content/Archiving.vue';
 import Projects from '@/components/content/Projects.vue';
 import Career from '@/components/content/Career.vue';
 import AboutMe from '@/components/content/AboutMe.vue';
@@ -36,6 +37,7 @@ onBeforeUnmount(() => {
       <Banner />
       <AboutMe />
       <Skills />
+      <Archiving />
       <Projects />
       <Career />
     </NuxtLayout>

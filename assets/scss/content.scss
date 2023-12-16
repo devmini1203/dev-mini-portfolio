@@ -234,6 +234,34 @@
     }
   }
 }
+.archiving-container {
+  background: #000000;
+
+  .archiving-content-box {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 71.25rem;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+
+    .title-box {
+      font-size: 3rem;
+      width: 100%;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0 9rem 0;
+
+      .title {
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-image: linear-gradient(90deg, #78ace4, #6f41b6);
+        border-image-slice: 1;
+      }
+    }
+  }
+}
 .projects-container {
   display: flex;
   justify-content: center;
