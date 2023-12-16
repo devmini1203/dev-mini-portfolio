@@ -22,8 +22,8 @@ const mySkills = ref([
   { skillName: 'PM2', skillImg: '/img/skills/PM2.png', percentage: 60 },
   { skillType: 'Configuration Management' },
   { skillName: 'SVN', skillImg: '/img/skills/SVN.png', percentage: 70 },
-  { skillName: 'Git', skillImg: '/img/skills/Git.png', percentage: 65 },
-  { skillName: 'GitHub', skillImg: '/img/skills/GitHub.png', percentage: 70 }
+  { skillName: 'Git', skillImg: '/img/skills/Git.png', percentage: 60 },
+  { skillName: 'GitHub', skillImg: '/img/skills/GitHub.png', percentage: 60 }
 ]);
 </script>
 

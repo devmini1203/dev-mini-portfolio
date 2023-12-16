@@ -1,29 +1,105 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const dayjs = useDayjs();
+const currentDay = dayjs().format('YYYY-MM-DD');
+
+const careerHistory = ref([
+  {
+    title: '▎국내 공장 Gathering 프로그램 웹 환경으로 전환',
+    devPeriod: '2021년 02월 01일 ~ 2021년 09월 16일',
+    devList: [
+      'C# 으로 개발된 Gathering 프로그램을 웹 환경으로 전환하기 위한 분석',
+      '카카오 오븐을 사용해 UI 설계 및 프로토타입 제작',
+      'VUE2 프레임워크를 사용해 개발',
+      'Axios를 통한 SpringBoot 와의 RestAPI 통신 구현',
+      '테블릿 환경에서의 원활한 동작을 위한 반응형 UI를 BootstrapVue를 사용해 구현',
+      'VUEX를 사용해 작업자 정보 관리 구현',
+      '환경 변수를 활용하여 dev,test,prod 개발 환경을 구분함을 통해 편의성 향상',
+      'Nginx와 Tomcat을 사용하여 프로젝트 배포 및 SSL 적용'
+    ]
+  },
+  {
+    title: '▎웹 Gathering 중국,베트남 공장 수평 전개',
+    devPeriod: '2021년 10월 15일 ~ 2021년 12월 6일',
+    devList: [
+      'Web Gathering이 국내 공장에 성공적으로 적용됨으로써 해외 공장 수평 전개',
+      'vue-i18n을 사용해 다국어 처리',
+      'UI/UX를 각 국가의 언어 길이를 고려하여 수정된 디자인 적용'
+    ]
+  },
+  {
+    title: '▎대리점 웹주문 사이트 및 관리자 사이트 VUE2 마이그레이션',
+    devPeriod: '2022년 1월 3일 ~ 2022년 8월 1일',
+    devList: [
+      'PL/SQL로 개발된 대리점 전용 주문 사이트와 관리자 사이트를 VUE2로 마이그레이션',
+      'Vuetify를 사용해 반응형 UI 구현',
+      'C#으로 개발된 접속 폼에서 전달해주는 토큰을 통한 로그인 시스템 구현',
+      '보안을 위한 자동 로그아웃 기능 개발',
+      '중첩 라우팅 적용',
+      'ApexChart 라이브러리를 사용해 대리점별 실적 등 중요 정보를 다양한 차트로 표현하여 제공',
+      'pdfmake 라이브러리를 사용해 대리점별 거래 정보 출력 및 다운로드 기능 제공'
+    ]
+  },
+  {
+    title: '▎국내 공장 직접직 인사 정보 조회 사이트 개발',
+    devPeriod: '2022년 10월 1일 ~ 2022년 11월 30일',
+    devList: []
+  },
+  {
+    title: '▎직접직 인사 정보 조회 사이트 수평 전개',
+    devPeriod: '2023년 1월 2일 ~ 2023년 2월 23일',
+    devList: []
+  },
+  {
+    title: '▎대리점 주문 관리자 사이트 NUXT3 마이그레이션',
+    devPeriod: '2023년 6월 5일 ~ 2023년 11월 17일',
+    devList: []
+  }
+]);
+</script>
 
 <template>
   <div class="career-container">
-    <div class="title-box">
-      <span class="title"> CAREER </span>
-    </div>
-
-    <div class="my-career-box">
-      <div>
-        <NuxtImg src="/img/career/AutonicsCI.png" />
+    <div class="carerr-content-box">
+      <div class="title-box">
+        <span class="title"> CAREER </span>
       </div>
 
-      <div style="color: white; padding-left: 3rem">
-        <div style="font-size: 1.5rem; padding-bottom: 0.5rem">오토닉스</div>
-        <div style="padding-bottom: 1rem">2021.01.01 ~ ing</div>
+      <div class="carerr-cotent">
+        <div class="carerr-introduction-box">
+          <div class="company-logo-box">
+            <div class="logo">
+              <NuxtImg src="/img/career/AutonicsCI.png" class="logo-img" />
+            </div>
+          </div>
 
-        <p>오토닉스는 산업 자동화 분야의 핵심인 센서, 제어기기, 모션 디바이스, 레이저 마킹 시스템 등</p>
-        <p>약 6,000여 종의 제품을 생산, 판매하며 종합적인 솔루션을 제공하고 있는 산업 자동화 전문 기업입니다.</p>
-        <br />
+          <div class="carerr-info-box">
+            <div class="company-title">Autonics</div>
+            <div class="working-day">2021.01.01 ~ {{ currentDay }} (현재)</div>
+            <div class="company-info">오토닉스는 산업 자동화 분야의 핵심인 센서, 제어기기, 모션 디바이스, 레이저 마킹 시스템 등</div>
+            <div class="company-info">약 6,000여 종의 제품을 생산, 판매하며 종합적인 솔루션을 제공하고 있는 산업 자동화 전문 기업입니다.</div>
+            <br />
+            <div class="company-info">
+              PL/SQL을 사용해 개발된 사내 백오피스 사이트 및 대리점 주문 사이트를 포함한 다양한 B2B 사이트 그리고 C#을 이용해 개발된 공장에서 사용되는 Gathering
+              프로그램등을 VUE,NUXT 프레임워크를 사용해 마이그레이션하는 프로젝트에서 프론트엔드와 백엔드 개발을 담당하고 있으며, 개발 완료된 프로젝트에 대한
+              유지보수와 리눅스 및 윈도우 서버의 관리 및 배포 작업 또한 맡고 있습니다.
+            </div>
 
-        <p>개발된지 오래된 백오피스 사이트 및 대리점 주문 사이트를 포함한 B2B 사이트 그리고 공장 라인에서 사용되는 Gathering 프로그램등을</p>
-        <p style="word-break: keep-all">
-          VUE,NUXT 프레임워크를 사용해 마이그레이션하는 프로젝트에서 프론트엔드와 백엔드 개발을 담당하고 있으며, 리눅스 및 윈도우 서버의 관리 및 배포 작업 또한
-          맡고 있습니다.
-        </p>
+            <div class="division" />
+
+            <!-- 개발 이력 -->
+            <div class="career-history" v-for="history in careerHistory">
+              <div class="title">{{ history.title }}</div>
+              <div class="develop-period">{{ history.devPeriod }}</div>
+              <div>
+                <ul>
+                  <li class="devlop-list" v-for="devHistory in history.devList">
+                    {{ devHistory }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
