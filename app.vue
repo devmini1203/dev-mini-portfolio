@@ -37,7 +37,7 @@ onBeforeUnmount(() => {
       <Banner />
       <AboutMe />
       <Skills />
-      <Archiving />
+      <!--     <Archiving /> -->
       <Projects />
       <Career />
     </NuxtLayout>
