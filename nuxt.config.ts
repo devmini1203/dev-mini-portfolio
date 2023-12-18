@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ['@element-plus/nuxt', '@nuxt/image', 'dayjs-nuxt', '@pinia/nuxt'],
-  css: ['@/assets/scss/reset_element_ui_style.scss'],
   ssr: false,
   app: {
     baseURL: '/dev_mini_portfolio',
