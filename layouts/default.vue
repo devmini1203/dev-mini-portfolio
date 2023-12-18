@@ -3,13 +3,13 @@ import Header from '@/components/layout/default/Header.vue';
 import Footer from '@/components/layout/default/Footer.vue';
 
 const props = defineProps<{
-  scrollHeight: number;
+  appScrollHeight: number;
 }>();
 </script>
 
 <template>
   <div class="default-layout">
-    <Header :scrollHeight="scrollHeight" />
+    <Header :appScrollHeight="appScrollHeight" />
     <slot />
     <Footer />
   </div>

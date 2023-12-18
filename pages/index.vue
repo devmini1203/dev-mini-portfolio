@@ -16,4 +16,4 @@ import AboutMe from '@/components/content/AboutMe.vue';
   </div>
 </template>
 
-<style lang="scss" src="@/assets/scss/app.scss"></style>
+<style></style>

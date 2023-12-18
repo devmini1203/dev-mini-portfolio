@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const props = defineProps<{ scrollHeight: number }>();
+const props = defineProps<{ appScrollHeight: number }>();
 
 const elementsStore = useElementsStore();
 
@@ -7,7 +7,6 @@ const myName = ref('Jong Min');
 const portfolioMenu = ref([
   { menuName: 'About me', id: 1 },
   { menuName: 'Skills', id: 2 },
-  /*  { menuName: 'Archiving', id: 5 }, */
   { menuName: 'Projects', id: 3 },
   { menuName: 'Career', id: 4 }
 ]);
@@ -27,14 +26,12 @@ const setContentId = (id: number) => {
   }
 };
 
-/**
- * about-me 컨테이너의 clientHeight 과 App.vue의 scrollHeight을 비교하여 적용할 클래스명을 리턴한다.
- */
 const dynamicHeaderclass = computed(() => {
-  const aboutMeHeight = document.getElementsByClassName('about-me-container')[0];
-  const componentTopHeight = Number((aboutMeHeight as HTMLElement)?.offsetTop);
+  const aboutMeHeight = elementsStore.aboutMeRef;
 
-  if (props.scrollHeight >= componentTopHeight - 100) {
+  const componentTopHeight = Number(aboutMeHeight?.offsetTop);
+
+  if (props.appScrollHeight >= componentTopHeight - 100) {
     return 'default-header-scroll';
   } else {
     return 'default-header';
