@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { IconUser, IconCalendarSmile, IconMapPin, IconPhone, IconMail, IconPencil } from '@tabler/icons-vue';
 
-const dayjs = useDayjs();
+const elementsStore = useElementsStore();
 
 const dateOfJoining = 2021;
 const currentYear = new Date().getFullYear();
@@ -46,10 +46,16 @@ const basicInfo = ref([
     infoValue: '동의대학교 - 정보통신공학과'
   }
 ]);
+
+const aboutMe = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  elementsStore.aboutMeRef = aboutMe.value;
+});
 </script>
 
 <template>
-  <div class="about-me-container">
+  <div class="about-me-container" ref="aboutMe">
     <div class="title-box">
       <span class="title"> ABOUT ME </span>
     </div>

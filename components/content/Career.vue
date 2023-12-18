@@ -69,10 +69,24 @@ const careerHistory = ref([
     ]
   }
 ]);
+
+const elementsStore = useElementsStore();
+const career = ref<HTMLElement | null>(null);
+const router = useRouter();
+watch(
+  () => router.currentRoute.value.query.type,
+  (newVal) => {
+    if (newVal === '4') career.value?.scrollIntoView({ behavior: 'smooth' });
+  }
+);
+
+onMounted(() => {
+  elementsStore.carerrRef = career.value;
+});
 </script>
 
 <template>
-  <div class="career-container">
+  <div class="career-container" ref="career">
     <div class="carerr-content-box">
       <div class="title-box">
         <span class="title"> CAREER </span>

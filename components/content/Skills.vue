@@ -25,10 +25,17 @@ const mySkills = ref([
   { skillName: 'Git', skillImg: '/img/skills/Git.png', percentage: 60 },
   { skillName: 'GitHub', skillImg: '/img/skills/GitHub.png', percentage: 60 }
 ]);
+
+const elementsStore = useElementsStore();
+const skills = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  elementsStore.skillsRef = skills.value;
+});
 </script>
 
 <template>
-  <div class="skills-container">
+  <div class="skills-container" ref="skills">
     <div class="title-box">
       <span class="title"> SKILLS </span>
     </div>

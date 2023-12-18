@@ -1,12 +1,6 @@
 <script lang="ts" setup>
 import { IconSquareRoundedArrowUpFilled } from '@tabler/icons-vue';
-
-import Banner from '@/components/content/Banner.vue';
-import Skills from '@/components/content/Skills.vue';
-import Archiving from '@/components/content/Archiving.vue';
-import Projects from '@/components/content/Projects.vue';
-import Career from '@/components/content/Career.vue';
-import AboutMe from '@/components/content/AboutMe.vue';
+import { useScroll } from '@vueuse/core';
 
 const moveToTop = () => {
   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -29,17 +23,25 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', setScrollHeight);
 });
+
+const appEl = ref<HTMLElement | null>(null);
+const { x, y, isScrolling, arrivedState, directions } = useScroll(appEl);
+
+const displayY = computed({
+  get() {
+    return y.value.toFixed(1);
+  },
+  set(val) {
+    y.value = Number.parseFloat(val);
+  }
+});
+console.log(displayY.value);
 </script>
 
 <template>
-  <div id="app">
+  <div id="app" ref="appEl">
     <NuxtLayout :scrollHeight="scrollHeight">
-      <Banner />
-      <AboutMe />
-      <Skills />
-      <!--     <Archiving /> -->
-      <Projects />
-      <Career />
+      <NuxtPage />
     </NuxtLayout>
 
     <!-- 최상단 이동 버튼  -->

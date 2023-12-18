@@ -1,10 +1,10 @@
 <script lang="ts" setup>
+import Header from '@/components/layout/default/Header.vue';
+import Footer from '@/components/layout/default/Footer.vue';
+
 const props = defineProps<{
   scrollHeight: number;
 }>();
-
-import Header from '@/components/layout/default/Header.vue';
-import Footer from '@/components/layout/default/Footer.vue';
 </script>
 
 <template>

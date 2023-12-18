@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 const props = defineProps<{ scrollHeight: number }>();
 
+const elementsStore = useElementsStore();
+
 const myName = ref('Jong Min');
 const portfolioMenu = ref([
   { menuName: 'About me', id: 1 },
@@ -10,18 +12,18 @@ const portfolioMenu = ref([
   { menuName: 'Career', id: 4 }
 ]);
 
-const getComponentNameToQuery = (id: number) => {
+const setContentId = (id: number) => {
   if (id === 1) {
-    document.querySelector('.about-me-container')?.scrollIntoView({ behavior: 'smooth' });
+    elementsStore.aboutMeRef?.scrollIntoView({ behavior: 'smooth' });
   }
   if (id === 2) {
-    document.querySelector('.skills-container')?.scrollIntoView({ behavior: 'smooth' });
+    elementsStore.skillsRef?.scrollIntoView({ behavior: 'smooth' });
   }
   if (id === 3) {
-    document.querySelector('.projects-container')?.scrollIntoView({ behavior: 'smooth' });
+    elementsStore.projectsRef?.scrollIntoView({ behavior: 'smooth' });
   }
   if (id === 4) {
-    document.querySelector('.career-container')?.scrollIntoView({ behavior: 'smooth' });
+    elementsStore.carerrRef?.scrollIntoView({ behavior: 'smooth' });
   }
 };
 
@@ -48,7 +50,7 @@ const dynamicHeaderclass = computed(() => {
       </div>
 
       <div class="portfolio-menu-parent-box">
-        <div v-for="menu in portfolioMenu" :key="menu.menuName" class="child-box" @click="getComponentNameToQuery(menu.id)">
+        <div v-for="menu in portfolioMenu" :key="menu.menuName" class="child-box" @click="setContentId(menu.id)">
           {{ menu.menuName }}
         </div>
       </div>

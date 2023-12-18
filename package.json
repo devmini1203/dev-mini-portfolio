@@ -29,8 +29,10 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.1.0",
+    "@pinia/nuxt": "^0.5.1",
     "@tabler/icons-vue": "^2.40.0",
     "@vueuse/core": "^10.6.1",
+    "pinia": "^2.1.7",
     "swiper": "^11.0.5"
   }
 }
