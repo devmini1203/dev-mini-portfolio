@@ -1,7 +1,9 @@
 <script lang="ts" setup>
 import { IconUser, IconCalendarSmile, IconMapPin, IconPhone, IconMail, IconPencil } from '@tabler/icons-vue';
 
-const elementsStore = useElementsStore();
+const props = defineProps<{
+  appWidth: number;
+}>();
 
 const dateOfJoining = 2021;
 const currentYear = new Date().getFullYear();
@@ -47,15 +49,23 @@ const basicInfo = ref([
   }
 ]);
 
-const aboutMe = ref<HTMLElement | null>(null);
+const dynamicAboutMeClass = computed(() => {
+  if (props.appWidth >= 730) {
+    return 'about-me-container';
+  } else {
+    return 'about-me-container-minimize';
+  }
+});
 
+const elementsStore = useElementsStore();
+const aboutMe = ref<HTMLElement | null>(null);
 onMounted(() => {
   elementsStore.aboutMeRef = aboutMe.value;
 });
 </script>
 
 <template>
-  <div class="about-me-container" ref="aboutMe">
+  <div :class="dynamicAboutMeClass" ref="aboutMe">
     <div class="title-box">
       <span class="title"> ABOUT ME </span>
     </div>
@@ -74,7 +84,7 @@ onMounted(() => {
 
       <div class="my-introduction-box">
         <div class="my-profile-img-box">
-          <NuxtImg src="/img/profile_image.jpg" sizes="420" />
+          <NuxtImg class="profile-img-box" src="/img/profile_image.jpg" />
         </div>
 
         <div class="my-story-text-box">

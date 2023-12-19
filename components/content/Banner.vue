@@ -1,16 +1,30 @@
 <script lang="ts" setup>
 import { IconChevronsDown } from '@tabler/icons-vue';
 
+const props = defineProps<{
+  appWidth: number;
+}>();
+
 const elementsStore = useElementsStore();
 const bannerRef = ref<HTMLElement | null>(null);
+
+const dynamicBannerClass = computed(() => {
+  if (props.appWidth >= 730) {
+    return 'banner-container';
+  } else {
+    return 'banner-container-minimize';
+  }
+});
 
 onMounted(() => {
   elementsStore.bannerRef = bannerRef.value;
 });
+
+//.banner-title-box-minimize
 </script>
 
 <template>
-  <div class="banner-container" ref="bannerRef">
+  <div :class="[dynamicBannerClass, 'gradient-background']" ref="bannerRef">
     <div class="banner-title-box">
       <div class="top-text-box">WELCOME!</div>
 

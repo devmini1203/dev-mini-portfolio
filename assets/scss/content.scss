@@ -1,3 +1,4 @@
+/* Banner */
 .banner-container {
   height: 100vh;
   display: flex;
@@ -8,6 +9,74 @@
     text-align: center;
     margin-bottom: 8%;
     font-size: 4rem;
+    color: white;
+
+    .top-text-box {
+      -webkit-text-stroke: 0.7px #fff;
+      opacity: 1;
+      color: transparent;
+      animation-duration: 2s;
+      animation-name: topTextAnimation;
+    }
+    .bottom-text-box {
+      animation-duration: 2s;
+      animation-name: bottomtextAnimation;
+    }
+
+    @keyframes topTextAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bottomtextAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  .next-content-button-box {
+    position: absolute;
+    bottom: 15px;
+    animation: nextContentBouttnAnimation 1s /* 속도 */ linear 0s /* 처음부터 끝까지 일정 속도로 진행 */ infinite alternate; /* 무한 반복 */
+
+    .chevrons-down-button {
+      width: 40px;
+      height: 40px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    @keyframes nextContentBouttnAnimation {
+      from {
+        transform: translatey(5px);
+      }
+      to {
+        transform: translatey(10px);
+      }
+    }
+  }
+}
+.banner-container-minimize {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .banner-title-box {
+    text-align: center;
+    margin-bottom: 8%;
+    font-size: 2.5rem;
     color: white;
 
     .top-text-box {
@@ -67,6 +136,8 @@
     }
   }
 }
+
+/* About Me */
 .about-me-container {
   display: flex;
   justify-content: center;
@@ -112,12 +183,12 @@
         .icon {
           width: 35px;
           height: 35px;
-          color: white;
+          color: #ffffff;
         }
       }
 
       .text-box {
-        color: white;
+        color: #ffffff;
         text-align: center;
         display: block;
         width: 200px;
@@ -137,6 +208,7 @@
     margin-bottom: 6rem;
 
     .profile-img-box {
+      width: 420px;
     }
     .my-story-text-box {
       font-size: 14px;
@@ -152,6 +224,102 @@
     }
   }
 }
+.about-me-container-minimize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #000000;
+  flex-flow: row wrap;
+
+  .title-box {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+    color: #ffffff;
+    max-width: 71.25rem;
+    margin: 6rem 20px 0px 20px;
+
+    .title {
+      border-bottom-width: 3px;
+      border-bottom-style: solid;
+      border-image: linear-gradient(90deg, #78ace4, #6f41b6);
+      border-image-slice: 1;
+    }
+  }
+
+  .basic-info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4rem;
+    max-width: 71.25rem;
+
+    .my-info-box {
+      display: flex;
+      margin-bottom: 15px;
+      justify-content: center;
+      width: calc(33.33% - 10px);
+
+      .icon-box {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        margin-top: 0px;
+        margin-right: 30px;
+
+        .icon {
+          width: 35px;
+          height: 35px;
+          color: #ffffff;
+        }
+      }
+
+      .text-box {
+        color: #ffffff;
+        text-align: center;
+        word-break: keep-all;
+        display: block;
+        width: 200px;
+        font-size: 12px;
+      }
+    }
+  }
+  .my-introduction-box {
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding-top: 4rem;
+    gap: 30px;
+    max-width: 71.25rem;
+    margin-bottom: 6rem;
+
+    .profile-img-box {
+      width: 260px;
+    }
+    .my-story-text-box {
+      font-size: 14px;
+      color: #ffffff;
+
+      .title {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .last-sentence {
+        word-break: keep-all;
+      }
+    }
+  }
+}
+
+/* skills */
 .skills-container {
   display: flex;
   justify-content: center;
@@ -234,72 +402,90 @@
     }
   }
 }
-.archiving-container {
-  background: #000000;
+.skills-container-minimize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #000000;
 
-  .archiving-content-box {
-    box-sizing: border-box;
+  .title-box {
+    text-align: center;
+    font-size: 3rem;
     width: 100%;
+    color: #ffffff;
     max-width: 71.25rem;
-    padding: 4rem 2rem;
-    margin: 0 auto;
+    margin: 6rem 20px 0px 20px;
 
-    .title-box {
-      font-size: 3rem;
-      width: 100%;
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem 0 9rem 0;
-
-      .title {
-        border-bottom-width: 3px;
-        border-bottom-style: solid;
-        border-image: linear-gradient(90deg, #78ace4, #6f41b6);
-        border-image-slice: 1;
-      }
+    .title {
+      border-bottom-width: 3px;
+      border-bottom-style: solid;
+      border-image: linear-gradient(90deg, #78ace4, #6f41b6);
+      border-image-slice: 1;
     }
+  }
 
-    .archiving-content {
+  .my-skills-box {
+    margin-top: 4rem;
+    max-width: 80%;
+    width: 100%;
+
+    .skills {
+      max-width: 60rem !important;
       display: flex;
       align-items: center;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      gap: 8%;
+      justify-content: center;
+      padding-bottom: 30px;
 
-      .content-square {
-        cursor: pointer;
-        width: 35%;
-        padding: 2rem;
-        background-color: #ffff;
-        border-radius: 1rem;
+      .skill-type {
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-top: 50px;
+      }
 
-        .logo-box {
-          display: flex;
-          align-items: center;
+      .skill-desc {
+        display: flex;
+        align-items: center;
+        width: 300px;
+
+        .img {
+          padding-right: 1.5rem;
           vertical-align: middle;
-
-          .logo {
-            width: 50px;
-          }
-          .archiving-title {
-            padding-left: 1rem;
-          }
         }
-
-        .path {
-          padding-top: 7px;
-          padding-bottom: 12px;
+        .text {
+          color: #ffffff;
+          padding-right: 1.5rem;
+          vertical-align: middle;
         }
+      }
 
-        .desc {
-          font-weight: bold;
+      .skill-percentage-box {
+        background: transparent;
+        border-style: solid;
+        border-color: rgba(128, 128, 128, 0.5);
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 14px;
+        height: 100%;
+
+        .skill-percentage {
+          color: white;
+          text-align: right;
+          border-radius: 14px;
+          font-size: 14px;
+          padding-right: 10px;
+          background: linear-gradient(90deg, #78ace4, #6f41b6);
+          //background: #4f4f4f;
+          //opacity: 0.7;
         }
       }
     }
   }
 }
+
+/* projects */
 .projects-container {
   background-color: black;
 
@@ -328,6 +514,8 @@
     }
   }
 }
+
+/* career */
 .career-container {
   background: #000000;
 
@@ -411,6 +599,114 @@
 
           .division {
             padding-top: 3rem;
+            border-bottom: 0.1px solid #ffffff;
+          }
+
+          .career-history {
+            padding-top: 2rem;
+
+            .title {
+              font-family: 'AppleSDGothicNeoB';
+            }
+            .develop-period {
+              padding-top: 10px;
+              font-size: 14px;
+            }
+            .devlop-list {
+              font-size: 14px;
+              margin-bottom: 0.5rem;
+              word-break: keep-all;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.career-container-minimize {
+  background: #000000;
+
+  .carerr-content-box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+
+    .title-box {
+      font-size: 3rem;
+      width: 100%;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0 9rem 0;
+
+      .title {
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-image: linear-gradient(90deg, #78ace4, #6f41b6);
+        border-image-slice: 1;
+      }
+    }
+
+    .carerr-cotent {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+
+      .carerr-introduction-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .company-logo-box {
+          .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            border-radius: 10rem;
+            background-color: #fff;
+            width: 15rem;
+            height: 15rem;
+
+            .logo-img {
+              display: block;
+              flex-shrink: 0;
+              width: 200px;
+            }
+          }
+        }
+
+        .carerr-info-box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          padding-top: 3rem;
+          color: #ffffff;
+          font-family: 'AppleSDGothicNeoUL';
+          font-weight: 100;
+
+          .company-title {
+            font-size: 2rem;
+            padding-bottom: 0.5rem;
+            font-family: 'AppleSDGothicNeoB';
+          }
+          .working-day {
+            font-size: 14px;
+            padding-bottom: 2rem;
+          }
+
+          .company-info {
+            font-family: 'AppleSDGothicNeoM';
+          }
+
+          .division {
+            padding-top: 3rem;
+
             border-bottom: 0.1px solid #ffffff;
           }
 

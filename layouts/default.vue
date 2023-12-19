@@ -4,12 +4,13 @@ import Footer from '@/components/layout/default/Footer.vue';
 
 const props = defineProps<{
   appScrollHeight: number;
+  appWidth: number;
 }>();
 </script>
 
 <template>
   <div class="default-layout">
-    <Header :appScrollHeight="appScrollHeight" />
+    <Header :appScrollHeight="appScrollHeight" :appWidth="appWidth" />
     <slot />
     <Footer />
   </div>

@@ -45,6 +45,18 @@
           }
         }
       }
+
+      .hamburger-menu-icon-box {
+        display: flex;
+        align-items: center;
+
+        .icon {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          color: #ffffff;
+        }
+      }
     }
   }
   .default-header-scroll {
@@ -94,8 +106,61 @@
           }
         }
       }
+
+      .hamburger-menu-icon-box {
+        display: flex;
+        align-items: center;
+
+        .icon {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          color: #000000;
+        }
+      }
     }
   }
+  .default-header-minimize {
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: transparent;
+
+    ::v-deep(.header-content) {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 70rem;
+      height: 4.5rem;
+      padding: 1.25rem 2rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      background: #ffffff;
+
+      .my-name-box {
+        // 애플 폰트 추가시 적용
+        font-size: 24px;
+        color: #000000;
+        font-weight: bold;
+      }
+
+      .hamburger-menu-icon-box {
+        display: flex;
+        align-items: center;
+
+        .icon {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          color: #000000;
+        }
+      }
+    }
+  }
+
   .default-footer {
     display: flex;
     justify-content: center;

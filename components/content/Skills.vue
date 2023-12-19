@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+const props = defineProps<{
+  appWidth: number;
+}>();
+
 const mySkills = ref([
   { skillType: 'FrontEnd' },
   { skillName: 'HTML5', skillImg: '/img/skills/HTML5.png', percentage: 75 },
@@ -26,16 +30,23 @@ const mySkills = ref([
   { skillName: 'GitHub', skillImg: '/img/skills/GitHub.png', percentage: 60 }
 ]);
 
+const dynamicSkillsClass = computed(() => {
+  if (props.appWidth >= 730) {
+    return 'skills-container';
+  } else {
+    return 'skills-container-minimize';
+  }
+});
+
 const elementsStore = useElementsStore();
 const skills = ref<HTMLElement | null>(null);
-
 onMounted(() => {
   elementsStore.skillsRef = skills.value;
 });
 </script>
 
 <template>
-  <div class="skills-container" ref="skills">
+  <div :class="dynamicSkillsClass" ref="skills">
     <div class="title-box">
       <span class="title"> SKILLS </span>
     </div>

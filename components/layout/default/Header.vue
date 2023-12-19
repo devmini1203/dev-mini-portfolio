@@ -1,7 +1,13 @@
 <script lang="ts" setup>
-const props = defineProps<{ appScrollHeight: number }>();
+import { IconMenu2 } from '@tabler/icons-vue';
+
+const props = defineProps<{
+  appScrollHeight: number;
+  appWidth: number;
+}>();
 
 const elementsStore = useElementsStore();
+const layoutStore = useLayoutStore();
 
 const myName = ref('Jong Min');
 const portfolioMenu = ref([
@@ -31,25 +37,33 @@ const dynamicHeaderclass = computed(() => {
 
   const componentTopHeight = Number(aboutMeHeight?.offsetTop);
 
-  if (props.appScrollHeight >= componentTopHeight - 100) {
-    return 'default-header-scroll';
+  if (props.appWidth <= 730) {
+    return 'default-header-minimize';
   } else {
-    return 'default-header';
+    if (props.appScrollHeight >= componentTopHeight - 100) {
+      return 'default-header-scroll';
+    } else {
+      return 'default-header';
+    }
   }
 });
 </script>
 
 <template>
-  <div :class="dynamicHeaderclass">
+  <div :class="[dynamicHeaderclass]">
     <div class="header-content">
       <div class="my-name-box">
         {{ myName }}
       </div>
 
-      <div class="portfolio-menu-parent-box">
+      <div class="portfolio-menu-parent-box" v-show="appWidth >= 730">
         <div v-for="menu in portfolioMenu" :key="menu.menuName" class="child-box" @click="setContentId(menu.id)">
           {{ menu.menuName }}
         </div>
+      </div>
+
+      <div v-show="appWidth <= 730" class="hamburger-menu-icon-box">
+        <component :is="IconMenu2" class="icon" />
       </div>
     </div>
   </div>
