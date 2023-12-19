@@ -14,7 +14,7 @@ body {
   font-family: 'AppleSDGothicNeoB';
 }
 
-/* 그라데이션 백그라운드 */
+/* 그라데이션 백그라운드 animation */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -26,7 +26,9 @@ body {
     background-position: 0% 50%;
   }
 }
-.gradient-background {
+
+/* Banner와 Footer 에 적용될 그라데이션 백그라운드 클래스 */
+.common-gradient-background {
   background: linear-gradient(65deg, #2a153d, #6f41b6, #4e95e2, #18d3a7);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;

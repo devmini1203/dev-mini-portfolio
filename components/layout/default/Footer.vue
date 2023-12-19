@@ -9,7 +9,7 @@ const footerIcon = ref([
 </script>
 
 <template>
-  <div class="default-footer gradient-background">
+  <div class="default-footer common-gradient-background">
     <div class="footer-icon-box">
       <el-tooltip class="box-item" effect="light" content="Github" placement="top">
         <a href="https://github.com/devmini1203" target="_blank">

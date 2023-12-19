@@ -24,7 +24,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div :class="[dynamicBannerClass, 'gradient-background']" ref="bannerRef">
+  <div :class="[dynamicBannerClass, 'common-gradient-background']" ref="bannerRef">
     <div class="banner-title-box">
       <div class="top-text-box">WELCOME!</div>
 
