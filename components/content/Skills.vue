@@ -6,9 +6,9 @@ const props = defineProps<{
 const mySkills = ref([
   { skillType: 'FrontEnd' },
   { skillName: 'HTML5', skillImg: '/img/skills/HTML5.png', percentage: 75 },
-  { skillName: 'CSS3', skillImg: '/img/skills/CSS3.png', percentage: 65 },
-  { skillName: 'JS', skillImg: '/img/skills/JS.png', percentage: 70 },
-  { skillName: 'VUE', skillImg: '/img/skills/VUE.png', percentage: 70 },
+  { skillName: 'CSS3', skillImg: '/img/skills/CSS3.png', percentage: 55 },
+  { skillName: 'JS', skillImg: '/img/skills/JS.png', percentage: 75 },
+  { skillName: 'VUE', skillImg: '/img/skills/VUE.png', percentage: 75 },
   { skillName: 'TS', skillImg: '/img/skills/TS.png', percentage: 67 },
   { skillName: 'NUXT', skillImg: '/img/skills/NUXT.png', percentage: 68 },
   { skillName: 'ElementPlus', skillImg: '/img/skills/ElementPlus.png', percentage: 80 },
@@ -24,18 +24,21 @@ const mySkills = ref([
   { skillType: 'Server' },
   { skillName: 'Nginx', skillImg: '/img/skills/Nginx.png', percentage: 70 },
   { skillName: 'PM2', skillImg: '/img/skills/PM2.png', percentage: 60 },
-  { skillType: 'Configuration Management' },
+  { skillName: 'Tomcat', skillImg: '/img/skills/Tomcat.png', percentage: 65 },
+  { skillType: 'Version Controll' },
   { skillName: 'SVN', skillImg: '/img/skills/SVN.png', percentage: 70 },
-  { skillName: 'Git', skillImg: '/img/skills/Git.png', percentage: 60 },
-  { skillName: 'GitHub', skillImg: '/img/skills/GitHub.png', percentage: 60 }
+  { skillName: 'Git', skillImg: '/img/skills/Git.png', percentage: 65 },
+  { skillName: 'GitHub', skillImg: '/img/skills/GitHub.png', percentage: 65 }
 ]);
 
 const dynamicSkillsClass = computed(() => {
-  if (props.appWidth >= 730) {
+  /*  if (props.appWidth >= 730) {
     return 'skills-container';
   } else {
     return 'skills-container-minimize';
-  }
+  } */
+
+  return 'skills-container';
 });
 
 const elementsStore = useElementsStore();
@@ -47,23 +50,36 @@ onMounted(() => {
 
 <template>
   <div :class="dynamicSkillsClass" ref="skills">
-    <div class="title-box">
-      <span class="title"> SKILLS </span>
-    </div>
+    <div class="skills-content-box">
+      <div class="title-box">
+        <span class="title"> SKILLS </span>
+      </div>
 
-    <div class="my-skills-box">
-      <div class="skills" v-for="skills in mySkills" :key="skills.skillName">
-        <div class="skill-type" v-if="skills.skillType">
-          {{ skills.skillType }}
+      <div class="skills-content">
+        <div class="skill-level-desc-box">
+          <div class="skill-level">
+            <div class="color-bar" />
+
+            <div class="text-box">
+              <div class="top-text">· 입문 · 초급 · 중급 · 고급 ·</div>
+              <div>0 - 25 - 50 - 75 - 100</div>
+            </div>
+          </div>
         </div>
 
-        <div class="skill-desc" v-if="skills.skillName">
-          <NuxtImg class="img" :src="skills.skillImg" sizes="20" />
-          <span class="text"> {{ skills.skillName }} </span>
-        </div>
+        <div class="skills" v-for="skills in mySkills" :key="skills.skillName">
+          <div class="skill-type" v-if="skills.skillType">
+            {{ skills.skillType }}
+          </div>
 
-        <div class="skill-percentage-box" v-if="skills.skillName">
-          <div class="skill-percentage" :style="`width:${skills.percentage}%`">{{ skills.percentage }} %</div>
+          <div class="skill-desc" v-if="skills.skillName">
+            <NuxtImg class="img" :src="skills.skillImg" sizes="30" />
+            <span class="text"> {{ skills.skillName }} </span>
+          </div>
+
+          <div class="skill-percentage-box" v-if="skills.skillName">
+            <div class="skill-percentage" :style="`width:${skills.percentage}%`">{{ skills.percentage }} %</div>
+          </div>
         </div>
       </div>
     </div>
