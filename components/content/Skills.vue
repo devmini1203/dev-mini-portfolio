@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { IconHelpCircle } from '@tabler/icons-vue';
+
 const props = defineProps<{
   appWidth: number;
 }>();
@@ -31,6 +33,13 @@ const mySkills = ref([
   { skillName: 'GitHub', skillImg: '/img/skills/GitHub.png', percentage: 65 }
 ]);
 
+const levlInfoText = ref([
+  '입문: 한번 경험해본 기술 스택',
+  '초급: 코드를 보고 디버깅이 가능',
+  '중급: 코드를 이해하며 어느 정도 학습됨',
+  '고급: 코드를 응용해서 구현하는 데 있어 익숙함'
+]);
+
 const dynamicSkillsClass = computed(() => {
   /*  if (props.appWidth >= 730) {
     return 'skills-container';
@@ -58,6 +67,18 @@ onMounted(() => {
       <div class="skills-content">
         <div class="skill-level-desc-box">
           <div class="skill-level">
+            <div class="level-info-box">
+              <el-popover trigger="hover" placement="top" width="330px">
+                <template #reference>
+                  <component :is="IconHelpCircle" class="question-mark-icon" />
+                </template>
+
+                <div class="info-text-box">
+                  <div v-for="info in levlInfoText">{{ info }}</div>
+                </div>
+              </el-popover>
+            </div>
+
             <div class="color-bar" />
 
             <div class="text-box">

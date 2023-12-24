@@ -395,6 +395,23 @@
           align-items: center;
           justify-content: center;
 
+          .level-info-box {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+
+            .question-mark-icon {
+              cursor: pointer;
+              outline: none;
+            }
+
+            .info-text-box {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
           .color-bar {
             border-radius: 3px;
             background: linear-gradient(90deg, #78ace4, #6f41b6);
@@ -452,7 +469,7 @@
           width: 100%;
           box-sizing: border-box;
           border-radius: 14px;
-          height: 25px;
+          height: 23px;
 
           .skill-percentage {
             display: flex;
@@ -463,14 +480,14 @@
             border-radius: 14px;
             font-size: 14px;
             height: 100%;
-            padding-right: 10px;
+            padding-right: 15px;
             background: linear-gradient(90deg, #78ace4, #6f41b6);
           }
         }
 
         @media screen and (max-width: 600px) {
           .skill-percentage-box {
-            height: 20px;
+            height: 15px;
           }
         }
       }
