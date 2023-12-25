@@ -529,10 +529,13 @@
       .projects-img-box {
         color: white;
         width: 50%;
-
         padding-right: 2rem;
         padding-top: 7.5%;
         overflow: hidden;
+
+        .swiper-img {
+          width: 100%;
+        }
 
         .important-message-box {
           padding-top: 2rem;
@@ -633,6 +636,10 @@
         padding-left: 2rem;
         padding-top: 7.5%;
         overflow: hidden;
+
+        .swiper-img {
+          width: 100%;
+        }
 
         .important-message-box {
           padding-top: 2rem;

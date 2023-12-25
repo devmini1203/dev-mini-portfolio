@@ -456,13 +456,13 @@ onMounted(() => {
             }"
           >
             <SwiperSlide>
-              <NuxtImg src="/img/projects/portfolio/banner.png" style="width: 100%" />
+              <NuxtImg src="/img/projects/portfolio/banner.png" class="swiper-img" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/portfolio/aboutme.png" style="width: 100%" />
+              <NuxtImg src="/img/projects/portfolio/aboutme.png" class="swiper-img" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/portfolio/skills.png" style="width: 100%" />
+              <NuxtImg src="/img/projects/portfolio/skills.png" class="swiper-img" />
             </SwiperSlide>
           </Swiper>
         </div>
