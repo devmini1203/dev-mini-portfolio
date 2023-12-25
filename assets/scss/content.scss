@@ -568,7 +568,7 @@
         }
 
         .project-detail-box {
-          padding-top: 1rem;
+          padding-top: 2rem;
           color: #ffffff;
           font-size: 14px;
 
@@ -609,7 +609,7 @@
       }
     }
 
-    /* 프로젝트가 짝수일 경우 */
+    /* 프로젝트가 짝수번일 경우 */
     .projects-box-even {
       display: flex;
       justify-content: center;
@@ -642,6 +642,7 @@
 
         .project-explan-box {
           padding-top: 2rem;
+
           font-family: 'AppleSDGothicNeoUL';
           font-weight: 300;
           padding-bottom: 1rem;
@@ -658,7 +659,7 @@
         }
 
         .project-detail-box {
-          padding-top: 1rem;
+          padding-top: 2rem;
           color: #ffffff;
           font-size: 14px;
 
