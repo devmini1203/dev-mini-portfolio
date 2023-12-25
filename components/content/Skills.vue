@@ -23,7 +23,7 @@ const mySkills = ref([
   { skillName: 'SpringBoot', skillImg: '/img/skills/SpringBoot.png', percentage: 60 },
   { skillName: 'OracleDB', skillImg: '/img/skills/OracleDB.png', percentage: 55 },
   { skillName: 'PL/SQL', skillImg: '/img/skills/PLSQL.png', percentage: 55 },
-  { skillType: 'Server' },
+  { skillType: 'Deployment' },
   { skillName: 'Nginx', skillImg: '/img/skills/Nginx.png', percentage: 70 },
   { skillName: 'PM2', skillImg: '/img/skills/PM2.png', percentage: 60 },
   { skillName: 'Tomcat', skillImg: '/img/skills/Tomcat.png', percentage: 65 },
