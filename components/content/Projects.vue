@@ -339,7 +339,7 @@ onMounted(() => {
       </div>
 
       <!-- 대리점 주문 관리자 사이트 NUXT3 마이그레이션 -->
-      <div class="projects-box" style="margin-bottom: 0">
+      <div class="projects-box">
         <div class="projects-img-box">
           <Swiper
             :loop="true"
@@ -417,6 +417,74 @@ onMounted(() => {
             <div class="detail">
               <div class="label-box">Deployment</div>
               <div class="value-box">Nginx, PM2, Tomcat</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 포트폴리오 사이트 -->
+      <div class="projects-box-even" style="margin-bottom: 0">
+        <div class="projects-img-box">
+          <Swiper
+            :loop="true"
+            :navigation="true"
+            :modules="swiperModule"
+            :autoplay="{
+              delay: 3000,
+              disableOnInteraction: false
+            }"
+            :pagination="{
+              clickable: true
+            }"
+          >
+            <SwiperSlide><p>1</p></SwiperSlide>
+            <SwiperSlide><p>2</p></SwiperSlide>
+            <SwiperSlide><p>3</p></SwiperSlide>
+            <SwiperSlide><p>4</p></SwiperSlide>
+            <SwiperSlide><p>5</p></SwiperSlide>
+            <SwiperSlide><p>6</p></SwiperSlide>
+          </Swiper>
+        </div>
+
+        <div class="projects-desc-box">
+          <div class="project-title-box">
+            <span class="title-number">06. </span>
+            &nbsp; 포트폴리오 사이트
+          </div>
+
+          <div class="project-explan-box">
+            <p>
+              오라클DB 내부에서 작성된 HTML로 인한 웹 보안 취약점, UI/UX를 고려하지 않은 디자인 시스템, 그리고 유지보수의 어려움을 해결하기 위해 PL/SQL 기반의
+              대리점 전용 주문 사이트를
+              <span class="skill-emphasize">VUE2</span>프레임워크와 UI프레임워크인 <span class="skill-emphasize">Vuetify</span>를 사용하여 마이그레이션한 사이트
+              입니다.
+            </p>
+
+            <p></p>
+
+            <p class="closing-ment"></p>
+          </div>
+
+          <div class="project-detail-box">
+            <div class="detail">
+              <div class="label-box">참여 인원</div>
+              <div class="value-box">1명</div>
+            </div>
+            <div class="detail">
+              <div class="label-box">개발 기간</div>
+              <div class="value-box">2023.01 ~ 2023.08</div>
+            </div>
+            <div class="detail">
+              <div class="label-box">주요 기능</div>
+              <div class="value-box"></div>
+            </div>
+            <div class="detail">
+              <div class="label-box">Front-End</div>
+              <div class="value-box">Nuxt3, ElementPlus</div>
+            </div>
+            <div class="detail">
+              <div class="label-box">Deployment</div>
+              <div class="value-box">Github</div>
             </div>
           </div>
         </div>
