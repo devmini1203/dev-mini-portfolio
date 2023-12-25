@@ -2,10 +2,12 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
+import { IconInfoCircle } from '@tabler/icons-vue';
 
-const swiperModule = [Autoplay, Pagination, Navigation];
+const swiperModule = [Autoplay, Pagination, Navigation, EffectFade];
 
 const elementsStore = useElementsStore();
 const projects = ref<HTMLElement | null>(null);
@@ -44,6 +46,8 @@ onMounted(() => {
             <SwiperSlide><p>5</p></SwiperSlide>
             <SwiperSlide><p>6</p></SwiperSlide>
           </Swiper>
+
+          <div class="important-message-box">※ 해당 프로젝트 이미지의 모든 데이터는 임의로 생성한 목업 데이터 입니다. ※</div>
         </div>
 
         <div class="projects-desc-box">
@@ -128,6 +132,8 @@ onMounted(() => {
             <SwiperSlide><p>5</p></SwiperSlide>
             <SwiperSlide><p>6</p></SwiperSlide>
           </Swiper>
+
+          <div class="important-message-box">※ 해당 프로젝트 이미지의 모든 데이터는 임의로 생성한 목업 데이터 입니다. ※</div>
         </div>
 
         <div class="projects-desc-box">
@@ -200,6 +206,8 @@ onMounted(() => {
             <SwiperSlide><p>5</p></SwiperSlide>
             <SwiperSlide><p>6</p></SwiperSlide>
           </Swiper>
+
+          <div class="important-message-box">※ 해당 프로젝트 이미지의 모든 데이터는 임의로 생성한 목업 데이터 입니다. ※</div>
         </div>
 
         <div class="projects-desc-box">
@@ -284,6 +292,8 @@ onMounted(() => {
             <SwiperSlide><p>5</p></SwiperSlide>
             <SwiperSlide><p>6</p></SwiperSlide>
           </Swiper>
+
+          <div class="important-message-box">※ 해당 프로젝트 이미지의 모든 데이터는 임의로 생성한 목업 데이터 입니다. ※</div>
         </div>
 
         <div class="projects-desc-box">
@@ -360,6 +370,8 @@ onMounted(() => {
             <SwiperSlide><p>5</p></SwiperSlide>
             <SwiperSlide><p>6</p></SwiperSlide>
           </Swiper>
+
+          <div class="important-message-box">※ 해당 프로젝트 이미지의 모든 데이터는 임의로 생성한 목업 데이터 입니다. ※</div>
         </div>
 
         <div class="projects-desc-box">
@@ -428,21 +440,30 @@ onMounted(() => {
           <Swiper
             :loop="true"
             :navigation="true"
+            :effect="'fade'"
             :modules="swiperModule"
             :autoplay="{
-              delay: 3000,
+              delay: 4000,
               disableOnInteraction: false
+            }"
+            :style="{
+              '--swiper-navigation-color': '#fff',
+              '--swiper-pagination-color': '#fff',
+              '--swiper-navigation-size': '24px'
             }"
             :pagination="{
               clickable: true
             }"
           >
-            <SwiperSlide><p>1</p></SwiperSlide>
-            <SwiperSlide><p>2</p></SwiperSlide>
-            <SwiperSlide><p>3</p></SwiperSlide>
-            <SwiperSlide><p>4</p></SwiperSlide>
-            <SwiperSlide><p>5</p></SwiperSlide>
-            <SwiperSlide><p>6</p></SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/portfolio/banner.png" style="width: 100%" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/portfolio/aboutme.png" style="width: 100%" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/portfolio/skills.png" style="width: 100%" />
+            </SwiperSlide>
           </Swiper>
         </div>
 
@@ -453,16 +474,13 @@ onMounted(() => {
           </div>
 
           <div class="project-explan-box">
+            <p>Nuxt3 프레임워크를 사용해 제작한 포트폴리오 사이트입니다.</p>
             <p>
-              오라클DB 내부에서 작성된 HTML로 인한 웹 보안 취약점, UI/UX를 고려하지 않은 디자인 시스템, 그리고 유지보수의 어려움을 해결하기 위해 PL/SQL 기반의
-              대리점 전용 주문 사이트를
-              <span class="skill-emphasize">VUE2</span>프레임워크와 UI프레임워크인 <span class="skill-emphasize">Vuetify</span>를 사용하여 마이그레이션한 사이트
-              입니다.
+              저에 대한 간략한 소개, 제가 경험하고 배웠던 소중한 스킬들, 진행했던 프로젝트에 대한 소개, 재직 경력 등을 한 눈에 볼 수 있도록 제작한 포트폴리오
+              사이트 입니다.
             </p>
 
-            <p></p>
-
-            <p class="closing-ment"></p>
+            <p>Nuxt3로 개발한 반응형 웹사이트이며, 주기적으로 업데이트 할 예정입니다.</p>
           </div>
 
           <div class="project-detail-box">
@@ -476,7 +494,7 @@ onMounted(() => {
             </div>
             <div class="detail">
               <div class="label-box">주요 기능</div>
-              <div class="value-box"></div>
+              <div class="value-box">자기 소개, 보유 기술 스택, 프로젝트 소개, 재직 경력 등</div>
             </div>
             <div class="detail">
               <div class="label-box">Front-End</div>

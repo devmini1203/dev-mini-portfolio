@@ -533,6 +533,13 @@
         padding-right: 2rem;
         padding-top: 7.5%;
         overflow: hidden;
+
+        .important-message-box {
+          padding-top: 2rem;
+          text-align: center;
+          font-size: 11px;
+          opacity: 0.7;
+        }
       }
 
       .projects-desc-box {
@@ -571,19 +578,23 @@
           padding-top: 2rem;
           color: #ffffff;
           font-size: 14px;
+          display: flex;
+          flex-direction: column;
 
           .detail {
             display: flex;
-            align-items: center;
             margin-bottom: 1rem;
 
             .label-box {
-              width: 150px;
+              display: inline-block;
+              width: 8rem;
             }
 
             .value-box {
+              display: inline-block;
               font-family: 'AppleSDGothicNeoUL';
               font-weight: 300;
+              width: calc(100% - 8rem);
             }
           }
         }
@@ -619,10 +630,16 @@
       .projects-img-box {
         color: white;
         width: 50%;
-
         padding-left: 2rem;
         padding-top: 7.5%;
         overflow: hidden;
+
+        .important-message-box {
+          padding-top: 2rem;
+          text-align: center;
+          font-size: 11px;
+          opacity: 0.7;
+        }
       }
 
       .projects-desc-box {
@@ -662,19 +679,23 @@
           padding-top: 2rem;
           color: #ffffff;
           font-size: 14px;
+          display: flex;
+          flex-direction: column;
 
           .detail {
             display: flex;
-            align-items: center;
             margin-bottom: 1rem;
 
             .label-box {
-              width: 150px;
+              display: inline-block;
+              width: 8rem;
             }
 
             .value-box {
+              display: inline-block;
               font-family: 'AppleSDGothicNeoUL';
               font-weight: 300;
+              width: calc(100% - 8rem);
             }
           }
         }
