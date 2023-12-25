@@ -588,6 +588,25 @@
           }
         }
       }
+
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+
+        .projects-img-box {
+          width: 100%;
+          padding-right: 0;
+          margin-bottom: 3rem;
+        }
+
+        .projects-desc-box {
+          width: 100%;
+
+          .project-title-box {
+            text-align: center;
+            font-size: 1.3rem;
+          }
+        }
+      }
     }
 
     /* 프로젝트가 짝수일 경우 */
@@ -656,6 +675,25 @@
               font-family: 'AppleSDGothicNeoUL';
               font-weight: 300;
             }
+          }
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+
+        .projects-img-box {
+          width: 100%;
+          margin-bottom: 3rem;
+          padding-left: 0;
+        }
+
+        .projects-desc-box {
+          width: 100%;
+
+          .project-title-box {
+            text-align: center;
+            font-size: 1.3rem;
           }
         }
       }
