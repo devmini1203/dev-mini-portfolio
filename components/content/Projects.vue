@@ -11,6 +11,14 @@ const swiperModule = [Autoplay, Pagination, Navigation, EffectFade];
 const elementsStore = useElementsStore();
 const projects = ref<HTMLElement | null>(null);
 
+const navigateToGithub = () => {
+  navigateTo('https://github.com/devmini1203/dev_mini_portfolio', {
+    open: {
+      target: '_blank'
+    }
+  });
+};
+
 onMounted(() => {
   elementsStore.projectsRef = projects.value;
 });
@@ -503,6 +511,10 @@ onMounted(() => {
               <div class="label-box">Deployment</div>
               <div class="value-box">Github</div>
             </div>
+          </div>
+
+          <div class="more-button-box">
+            <el-button class="github-button" @click="navigateToGithub" color="#ffffff" :round="true"> Github 보기 </el-button>
           </div>
         </div>
       </div>

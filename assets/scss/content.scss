@@ -601,6 +601,15 @@
             }
           }
         }
+
+        .more-button-box {
+          padding-top: 1rem;
+
+          .github-button {
+            width: 50%;
+            height: 50px;
+          }
+        }
       }
 
       @media screen and (max-width: 800px) {
@@ -704,6 +713,15 @@
               font-weight: 300;
               width: calc(100% - 8rem);
             }
+          }
+        }
+
+        .more-button-box {
+          padding-top: 1rem;
+
+          .github-button {
+            width: 50%;
+            height: 50px;
           }
         }
       }
