@@ -68,7 +68,7 @@ onMounted(() => {
         <div class="skill-level-desc-box">
           <div class="skill-level">
             <div class="level-info-box">
-              <el-popover trigger="hover" placement="top" width="330px">
+              <el-popover trigger="click" placement="top" width="330px">
                 <template #reference>
                   <component :is="IconHelpCircle" class="question-mark-icon" />
                 </template>
