@@ -5,7 +5,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
-import { IconInfoCircle } from '@tabler/icons-vue';
 
 const swiperModule = [Autoplay, Pagination, Navigation, EffectFade];
 
@@ -474,13 +473,13 @@ onMounted(() => {
           </div>
 
           <div class="project-explan-box">
-            <p>Nuxt3 프레임워크를 사용해 제작한 포트폴리오 사이트입니다.</p>
+            <p><span class="skill-emphasize">Nuxt3</span> 프레임워크를 사용해 제작한 포트폴리오 사이트입니다.</p>
             <p>
               저에 대한 간략한 소개, 제가 경험하고 배웠던 소중한 스킬들, 진행했던 프로젝트에 대한 소개, 재직 경력 등을 한 눈에 볼 수 있도록 제작한 포트폴리오
               사이트 입니다.
             </p>
 
-            <p>Nuxt3로 개발한 반응형 웹사이트이며, 주기적으로 업데이트 할 예정입니다.</p>
+            <p>향후 보완하거나 추가할 사항이 생기면 주기적으로로 업데이트 할 예정입니다.</p>
           </div>
 
           <div class="project-detail-box">
