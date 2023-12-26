@@ -11,6 +11,10 @@
     font-size: 4rem;
     color: white;
 
+    @media screen and (max-width: 730px) {
+      font-size: 2.5rem;
+    }
+
     .top-text-box {
       -webkit-text-stroke: 0.7px #fff;
       opacity: 1;
@@ -67,75 +71,7 @@
     }
   }
 }
-.banner-container-minimize {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  .banner-title-box {
-    text-align: center;
-    margin-bottom: 8%;
-    font-size: 2.5rem;
-    color: white;
-
-    .top-text-box {
-      -webkit-text-stroke: 0.7px #fff;
-      opacity: 1;
-      color: transparent;
-      animation-duration: 2s;
-      animation-name: topTextAnimation;
-    }
-    .bottom-text-box {
-      animation-duration: 2s;
-      animation-name: bottomtextAnimation;
-    }
-
-    @keyframes topTextAnimation {
-      0% {
-        opacity: 0;
-        transform: translateY(-100px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes bottomtextAnimation {
-      0% {
-        opacity: 0;
-        transform: translateY(100px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  }
-
-  .next-content-button-box {
-    position: absolute;
-    bottom: 15px;
-    animation: nextContentBouttnAnimation 1s /* 속도 */ linear 0s /* 처음부터 끝까지 일정 속도로 진행 */ infinite alternate; /* 무한 반복 */
-
-    .chevrons-down-button {
-      width: 40px;
-      height: 40px;
-      color: #ffffff;
-      cursor: pointer;
-    }
-
-    @keyframes nextContentBouttnAnimation {
-      from {
-        transform: translatey(5px);
-      }
-      to {
-        transform: translatey(10px);
-      }
-    }
-  }
-}
 /* About Me */
 .about-me-container {
   background: #000000;
