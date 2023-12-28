@@ -40,7 +40,7 @@ onMounted(() => {
             :effect="'fade'"
             :modules="swiperModule"
             :autoplay="{
-              delay: 5000,
+              delay: 4000,
               disableOnInteraction: false
             }"
             :style="{
@@ -146,7 +146,7 @@ onMounted(() => {
             :navigation="true"
             :modules="swiperModule"
             :autoplay="{
-              delay: 3000,
+              delay: 4000,
               disableOnInteraction: false
             }"
             :pagination="{
@@ -161,7 +161,7 @@ onMounted(() => {
             <SwiperSlide><p>6</p></SwiperSlide>
           </Swiper>
 
-          <div class="important-message-box">※ 해당 프로젝트 이미지의 모든 데이터는 임의로 생성한 목업 데이터 입니다. ※</div>
+          <div class="important-message-box">※ 해당 프로젝트 이미지에 나타나는 모든 데이터는 임의로 생성한 목업 데이터 입니다. ※</div>
         </div>
 
         <div class="projects-desc-box">
@@ -221,7 +221,7 @@ onMounted(() => {
             :navigation="true"
             :modules="swiperModule"
             :autoplay="{
-              delay: 5000,
+              delay: 4000,
               disableOnInteraction: false
             }"
             :pagination="{
