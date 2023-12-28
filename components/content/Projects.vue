@@ -93,7 +93,7 @@ onMounted(() => {
 
             <p>
               카카오 오븐을 통한 UI 설계부터 시작해 다양한 프론트엔드 비지니스 로직을 작성하며 VUE2 프레임워크에 익숙해질 수 있었고 다양한 모바일 환경을 위한
-              반응형 UI 구현을 진행하는 좋은 경험도 할 수 있었으며
+              반응형 UI 구현을 진행해보는 좋은 경험도 할 수 있었으며
               <span class="skill-emphasize">SVN</span>을 이용한 협업을 통해, 형상관리의 중요성도 몸소 느낄 수 있었습니다.
             </p>
 
@@ -172,15 +172,22 @@ onMounted(() => {
 
           <div class="project-explan-box">
             <p>
-              오라클DB 내부에서 작성된 HTML로 인한 웹 보안 취약점, UI/UX를 고려하지 않은 디자인 시스템, 그리고 유지보수의 어려움을 해결하기 위해 PL/SQL 기반의
-              대리점 전용 주문 사이트를
-              <span class="skill-emphasize">VUE2</span>프레임워크와 UI프레임워크인 <span class="skill-emphasize">Vuetify</span>를 사용하여 마이그레이션한 사이트
-              입니다.
+              오라클DB 내부에서 작성된 HTML로 인한 웹 보안 취약점, UI/UX를 고려하지 않은 디자인, 향후 유지보수에 어려움이 예상되어 PL/SQL 기반의 대리점 전용
+              주문 사이트를
+              <span class="skill-emphasize">Vue2</span> 프레임워크와 UI 프레임워크인 <span class="skill-emphasize">Vuetify</span>를 사용하여 마이그레이션한
+              사이트 입니다.
             </p>
 
-            <p></p>
+            <p>
+              Vue UI 프레임워크 중 가장 사랑 받고 있는 Vuetify를 채택하여 개발을 진행하였고 이를 통해 Vuetify의 사용법 및 다양한 활용법을 익힐 수 있었으며,
+              마이그레이션 이전 사이트에서는 존재하지 않았던 다양한 신규 기능들<component :is=""></component>을 개발하여 제공함으로써 수 많은 대리점과 이를
+              관리하는 영업관리팀 간의 업무 효율을 향상 시켜 더욱 원활한 업무 프로세스를 구축할 수 있도록 기여했습니다.
+            </p>
 
-            <p class="closing-ment"></p>
+            <p class="closing-ment">
+              해당 프로젝트를 통해 처음으로 B2B 서비스를 개발하며 B2B 서비스에 대한 이해와 안정적이고 원활한 서비스 제공을 위한 개발 역량을 향상시킬수
+              있었습니다.
+            </p>
           </div>
 
           <div class="project-detail-box">
@@ -194,7 +201,10 @@ onMounted(() => {
             </div>
             <div class="detail">
               <div class="label-box">주요 기능</div>
-              <div class="value-box"></div>
+              <div class="value-box">
+                제품 주문, 월/연 달성률 및 매입 현황 시각화, 다크 모드, 테이블 데이터 엑셀 다운로드, 고객 등록 및 관리, 배송 인수 확인, 품목 조회, 성적서 발행,
+                거래/여신 정보 PDF 다운로드 및 뷰어 제공, 자사 관련 웹사이트 바로 가기 제공
+              </div>
             </div>
             <div class="detail">
               <div class="label-box">Front-End</div>
@@ -213,11 +223,12 @@ onMounted(() => {
       </div>
 
       <!-- 직접직 인사 정보 조회 사이트 -->
+      <!--     :centeredSlides="true"
+            :slidesPerView="2" -->
       <div class="projects-box">
         <div class="projects-img-box">
           <Swiper
             :loop="true"
-            :centeredSlides="true"
             :navigation="true"
             :modules="swiperModule"
             :autoplay="{
