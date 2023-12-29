@@ -140,6 +140,10 @@
       align-items: center;
       max-width: 71.25rem;
 
+      @media screen and (max-width: 730px) {
+        flex-direction: column;
+      }
+
       .my-profile-img-box {
         margin-right: 2rem;
 
@@ -148,12 +152,23 @@
           border-radius: 9px;
           border: 3px solid #ccc;
         }
+
+        @media screen and (max-width: 730px) {
+          margin-right: 0px;
+          .img {
+            width: 300px;
+          }
+        }
       }
       .my-story-text-box {
         display: flex;
         align-items: center;
         flex-flow: column;
         color: #ffffff;
+
+        @media screen and (max-width: 730px) {
+          margin-top: 2rem;
+        }
 
         .title-box {
           font-size: 1.4rem;
@@ -190,105 +205,7 @@
     }
   }
 }
-.about-me-container-minimize {
-  background: #000000;
-  width: 100%;
 
-  .about-me-content-box {
-    max-width: 71.25rem;
-    padding: 6rem 2rem;
-    margin: 0 auto;
-
-    .title-box {
-      font-size: 3rem;
-      width: 100%;
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem 0 4rem 0;
-
-      .title {
-        border-bottom-width: 3px;
-        border-bottom-style: solid;
-        border-image: linear-gradient(90deg, #78ace4, #6f41b6);
-        border-image-slice: 1;
-      }
-    }
-
-    .basic-info-content-box {
-      color: white;
-      text-align: center;
-      margin-bottom: 5rem;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-
-      .basic-info-wrapper {
-        display: flex;
-        width: 100%;
-        max-width: 14rem;
-
-        .icon {
-          width: 2rem;
-          min-width: 2rem;
-          height: 2rem;
-          margin-top: 0.2rem;
-          margin-right: 2rem;
-        }
-        .text-box {
-          text-align: left;
-
-          .label {
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            font-size: 1.25rem;
-          }
-          .value {
-            font-family: 'AppleSDGothicNeoUL';
-            font-weight: 300;
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-
-    .my-introduction-content-box {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      max-width: 71.25rem;
-
-      .my-profile-img-box {
-        .img {
-          width: 300px;
-          border-radius: 9px;
-          border: 3px solid #ccc;
-        }
-      }
-      .my-story-text-box {
-        display: flex;
-        align-items: center;
-        flex-flow: column;
-        color: #ffffff;
-        margin-top: 2rem;
-
-        .title-box {
-          font-size: 1.4rem;
-          font-weight: bold;
-          padding-top: 0px;
-          padding-bottom: 1rem;
-        }
-
-        .text-box {
-          //width: 300px;
-          font-family: 'AppleSDGothicNeoUL';
-          font-weight: 300;
-        }
-      }
-    }
-  }
-}
 /* Skills */
 .skills-container {
   background: #000000;

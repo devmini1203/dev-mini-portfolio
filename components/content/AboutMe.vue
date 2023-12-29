@@ -50,14 +50,6 @@ const basicInfo = ref([
   }
 ]);
 
-const dynamicAboutMeClass = computed(() => {
-  if (props.appWidth >= 730) {
-    return 'about-me-container';
-  } else {
-    return 'about-me-container-minimize';
-  }
-});
-
 const elementsStore = useElementsStore();
 const aboutMe = ref<HTMLElement | null>(null);
 onMounted(() => {
@@ -66,7 +58,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div :class="dynamicAboutMeClass" ref="aboutMe">
+  <div class="about-me-container" ref="aboutMe">
     <div class="about-me-content-box">
       <div class="title-box">
         <span class="title"> ABOUT ME </span>
