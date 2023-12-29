@@ -138,27 +138,48 @@ onMounted(() => {
         </div>
       </div>
 
-      <!-- 대리점 전용 웹주문 사이트 -->
+      <!-- 대리점 전용 주문 사이트 -->
       <div class="projects-box-even">
         <div class="projects-img-box">
           <Swiper
             :loop="true"
             :navigation="true"
+            :effect="'fade'"
             :modules="swiperModule"
             :autoplay="{
               delay: 4000,
               disableOnInteraction: false
             }"
+            :style="{
+              '--swiper-navigation-color': '#000000',
+              '--swiper-pagination-color': '#000000',
+              '--swiper-navigation-size': '24px'
+            }"
             :pagination="{
               clickable: true
             }"
           >
-            <SwiperSlide><p>1</p></SwiperSlide>
-            <SwiperSlide><p>2</p></SwiperSlide>
-            <SwiperSlide><p>3</p></SwiperSlide>
-            <SwiperSlide><p>4</p></SwiperSlide>
-            <SwiperSlide><p>5</p></SwiperSlide>
-            <SwiperSlide><p>6</p></SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/order/web_order_01.png" class="swiper-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/order/web_order_02.png" class="swiper-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/order/web_order_03.png" class="swiper-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/order/web_order_04.png" class="swiper-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/order/web_order_05.png" class="swiper-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/order/web_order_06.png" class="swiper-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/order/web_order_07.png" class="swiper-img" />
+            </SwiperSlide>
           </Swiper>
 
           <div class="important-message-box">※ 해당 프로젝트 이미지에 나타나는 모든 데이터는 임의로 생성한 목업 데이터 입니다. ※</div>
@@ -180,13 +201,13 @@ onMounted(() => {
 
             <p>
               Vue UI 프레임워크 중 가장 사랑 받고 있는 Vuetify를 채택하여 개발을 진행하였고 이를 통해 Vuetify의 사용법 및 다양한 활용법을 익힐 수 있었으며,
-              마이그레이션 이전 사이트에서는 존재하지 않았던 다양한 신규 기능들<component :is=""></component>을 개발하여 제공함으로써 수 많은 대리점과 이를
-              관리하는 영업관리팀 간의 업무 효율을 향상 시켜 더욱 원활한 업무 프로세스를 구축할 수 있도록 기여했습니다.
+              마이그레이션 이전 사이트에서는 존재하지 않았던 다양한 신규 기능들을 개발하여 제공함으로써 수 많은 대리점과 이를 관리하는 영업관리팀 간의 업무
+              효율을 향상 시켜 더욱 원활한 업무 프로세스를 구축할 수 있도록 기여했습니다.
             </p>
 
             <p class="closing-ment">
               해당 프로젝트를 통해 처음으로 B2B 서비스를 개발하며 B2B 서비스에 대한 이해와 안정적이고 원활한 서비스 제공을 위한 개발 역량을 향상시킬수
-              있었습니다.
+              있었습니다. 더불어 주문 사이트를 위한 관리자 사이트 마이그레이션도 동시에 진행하며 WBS 작성법 및 개발 일정 관리 능력 또한 함양할 수 있었습니다.
             </p>
           </div>
 
@@ -202,8 +223,8 @@ onMounted(() => {
             <div class="detail">
               <div class="label-box">주요 기능</div>
               <div class="value-box">
-                제품 주문, 월/연 달성률 및 매입 현황 시각화, 다크 모드, 테이블 데이터 엑셀 다운로드, 고객 등록 및 관리, 배송 인수 확인, 품목 조회, 성적서 발행,
-                거래/여신 정보 PDF 다운로드 및 뷰어 제공, 자사 관련 웹사이트 바로 가기 제공
+                제품 주문, 제품 조회, 견적 시스템, 월/연 달성률 및 매입 현황 시각화, 다크 모드, 테이블 데이터 엑셀 다운로드, 공지 팝업, 고객 등록 및 관리, 배송
+                인수 확인, 품목 조회, 성적서 발행, 거래/여신 정보 PDF 다운로드 및 뷰어 제공, 자사 관련 웹사이트 바로 가기, 사용자 가이드, 게시판 CRUD
               </div>
             </div>
             <div class="detail">
@@ -229,6 +250,7 @@ onMounted(() => {
         <div class="projects-img-box">
           <Swiper
             :loop="true"
+            :effect="'fade'"
             :navigation="true"
             :modules="swiperModule"
             :autoplay="{
@@ -351,25 +373,37 @@ onMounted(() => {
         <div class="projects-img-box">
           <Swiper
             :loop="true"
+            :effect="'fade'"
             :navigation="true"
             :modules="swiperModule"
             :autoplay="{
-              delay: 3000,
+              delay: 4000,
               disableOnInteraction: false
             }"
             :pagination="{
               clickable: true
             }"
+            :style="{
+              'text-align': 'center',
+              '--swiper-navigation-color': '#000000',
+              '--swiper-navigation-size': '24px'
+            }"
           >
-            <SwiperSlide><p>1</p></SwiperSlide>
-            <SwiperSlide><p>2</p></SwiperSlide>
-            <SwiperSlide><p>3</p></SwiperSlide>
-            <SwiperSlide><p>4</p></SwiperSlide>
-            <SwiperSlide><p>5</p></SwiperSlide>
-            <SwiperSlide><p>6</p></SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_01.png" class="swiper-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_02.png" class="swiper-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_03.png" class="swiper-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_04.png" class="swiper-img" />
+            </SwiperSlide>
           </Swiper>
 
-          <div class="important-message-box">※ 해당 프로젝트 이미지의 모든 데이터는 임의로 생성한 목업 데이터 입니다. ※</div>
+          <div class="important-message-box">※ 해당 프로젝트 이미지에 나타나는 모든 데이터는 임의로 생성한 목업 데이터 입니다. ※</div>
         </div>
 
         <div class="projects-desc-box">
@@ -380,26 +414,25 @@ onMounted(() => {
 
           <div class="project-explan-box">
             <p>
-              오토닉스는 생산직 근로자분들에게 C#으로 개발된 실적 등록 및 공정 관리 프로그램을 윈도우 테블릿에서 제공하고 있었습니다. 그러나 계속되는 윈도우
-              테블릿의 가격 상승 및 향후 공급 불안정이 예상되어, 비교적 저렴한 안드로이드 테블릿으로의 전환이 필요하게 되었고
-            </p>
-            <p>
-              이에 따라, <span class="skill-emphasize">VUE2</span> 프레임워크와 UI프레임워크인 <span class="skill-emphasize">BootstrapVue</span>를 사용하여 C#
-              프로그램을 웹 환경으로 전환하는 프로젝트에서 프론트엔드 개발을 맡아 진행하게 되었습니다.
+              기존 Vue2와 Vuetify를 사용해 개발하였던 대리점 주문 관리자 사이트를 <span class="skill-emphasize">Nuxt3</span> 프레임워크와 UI 프레임워크인
+              <span class="skill-emphasize">ElementPlus</span>를 사용하여 마이그레이션한 사이트 입니다.
             </p>
 
             <p>
-              카카오 오븐을 통한 UI 설계부터 시작해 다양한 프론트엔드 비지니스 로직을 작성하며 VUE2 프레임워크에 익숙해질 수 있었고 다양한 모바일 환경을 위한
-              반응형 UI 구현을 진행하는 좋은 경험도 할 수 있었으며
-              <span class="skill-emphasize">SVN</span>을 이용한 협업을 통해, 형상관리의 중요성도 몸소 느낄 수 있었습니다.
+              SSR에 대한 이해와 학습을 위해 기존 Vue2 프레임워크에 비해 AutoImport 등의 편리하고 강력한 기능들이 제공되는 Nuxt3 프레임워크와 당시 Vuetify3의
+              Beta 버전 지원으로 인한 컴포넌트 지원이 부족했던점을 고려하여 TypeScript에 친화적인 ElementPlus를 채택하여 개발을 진행하였고, 이전 관리자 사이트를
+              사용하던 유관부서에게 개선점 및 추가 요구사항 등을 요청 후 전달 받아 반영하였습니다.
             </p>
 
-            <p>또한 현장 관리자들과의 소통을 통해, 다양한 요구 사항 및 오류에 대응하며 CS와 QA 업무의 중요성도 느끼게 되었습니다.</p>
+            <p>
+              또한, SpringBoot와 PL/SQL을 사용한 백엔드 개발도 함께 맡아 진행하며 REST API에 대한 이해와 작성법 등을 배울 수 있었으며, 동시에 기존의 클라이언트
+              쿠키 기반 인증 체계를 SpringSecurity와 JWT를 기반으로한 새로운 인증 체계로 대체함으로써 웹 보안을 향상시켰습니다.
+              <br />
+            </p>
 
             <p class="closing-ment">
-              첫 실무 프로젝트이자 혼자서 프론트엔드를 담당했다보니 실수도 많았고 돌아보면 아쉬움도 많은 프로젝트입니다. 하지만 웹 개발 직군을 선택한 것이 옳은
-              결정이었음을 다시 한번 느끼게 해줄 정도의 즐거움과 만족감을 느끼게 해준 프로젝트였으며, 자바스크립트 기본기를 탄탄히 다지게 해주었고 VUE2
-              프레임워크의 숙련도를 높여준 고마운 프로젝트임에는 틀림없습니다.
+              해당 프로젝트를 통해 SSR에 대한 이해와 Nuxt3 프레임워크의 동작 원리 및 사용법을 터득할 수 있었고 백엔드 개발을 함께 진행하며 클라이언트와 서버간의
+              유연하고 원활한 통신을 위한 개발 능력을 함양할 수 있었던 소중한 경험이었습니다.
             </p>
           </div>
 
@@ -414,7 +447,7 @@ onMounted(() => {
             </div>
             <div class="detail">
               <div class="label-box">주요 기능</div>
-              <div class="value-box"></div>
+              <div class="value-box">게시판 CRUD, 대리점 현황 관리, 고객 지원 관리, 제품 관리,판매 정보 수정,사양 문의 관리,주문 관리</div>
             </div>
             <div class="detail">
               <div class="label-box">Front-End</div>
@@ -480,8 +513,7 @@ onMounted(() => {
               저에 대한 간략한 소개, 제가 경험하고 배웠던 소중한 스킬들, 진행했던 프로젝트에 대한 소개, 재직 경력 등을 한 눈에 볼 수 있도록 제작한 포트폴리오
               사이트 입니다.
             </p>
-
-            <p>향후 보완하거나 추가할 사항이 생기면 주기적으로 업데이트 할 예정입니다.</p>
+            <p class="closing-ment">향후 보완하거나 추가할 사항이 생기면 주기적으로 업데이트 할 예정입니다.</p>
           </div>
 
           <div class="project-detail-box">
