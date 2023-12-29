@@ -37,14 +37,10 @@ const dynamicHeaderclass = computed(() => {
 
   const componentTopHeight = Number(aboutMeHeight?.offsetTop);
 
-  if (props.appWidth <= 730) {
-    return 'default-header-minimize';
+  if (props.appScrollHeight >= componentTopHeight - 100) {
+    return 'default-header-scroll';
   } else {
-    if (props.appScrollHeight >= componentTopHeight - 100) {
-      return 'default-header-scroll';
-    } else {
-      return 'default-header';
-    }
+    return 'default-header';
   }
 });
 </script>
