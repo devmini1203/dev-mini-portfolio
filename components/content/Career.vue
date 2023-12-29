@@ -53,8 +53,8 @@ const careerHistory = ref([
       '그룹웨어를 사용하지 못하는 직접직 사원들을 위한 모바일 전용 인사 정보 조회 사이트 개발',
       'VUE3 프레임워크를 사용해 개발',
       'Vuetify를 사용해 반응형 UI 구현',
-      'SpringBoot를 사용한 백엔드 개발 동시 진행',
-      'JWT를 이용한 인증 시스템 구현'
+      'TypeScript 적용',
+      'Vite 적용'
     ]
   },
   {
@@ -72,7 +72,9 @@ const careerHistory = ref([
     devList: [
       'VUE2를 사용해 개발된 프로젝트를 NUXT3 프레임워크로 마이그레이션 진행',
       'ElementPlus를 사용해 반응형 UI 구현',
-      'Nginx와 PM2를 사용해 프로젝트 배포'
+      'Nginx와 PM2를 사용해 프로젝트 배포',
+      'SpringBoot와 PL/SQL 사용한 백엔드 개발 동시 진행',
+      'JWT를 이용한 인증 시스템 구현'
     ]
   }
 ]);
