@@ -1,10 +1,6 @@
 <script lang="ts" setup>
-const props = defineProps<{
-  appWidth: number;
-}>();
-
 const dayjs = useDayjs();
-const currentDay = dayjs().format('YYYY-MM-DD');
+const currentDay = `${dayjs().format('YYYY')}년 ${dayjs().format('MM')}월 ${dayjs().format('DD')}일`;
 
 const careerHistory = ref([
   {
@@ -79,14 +75,6 @@ const careerHistory = ref([
   }
 ]);
 
-const dynamicCareerClass = computed(() => {
-  if (props.appWidth >= 730) {
-    return 'career-container';
-  } else {
-    return 'career-container-minimize';
-  }
-});
-
 const elementsStore = useElementsStore();
 const career = ref<HTMLElement | null>(null);
 onMounted(() => {
@@ -95,45 +83,38 @@ onMounted(() => {
 </script>
 
 <template>
-  <div :class="dynamicCareerClass" ref="career">
-    <div class="carerr-content-box">
+  <div class="career-container" ref="career">
+    <div class="career-content-box">
       <div class="title-box">
         <span class="title"> CAREER </span>
       </div>
 
-      <div class="carerr-cotent">
-        <div class="carerr-introduction-box">
-          <div class="company-logo-box">
-            <div class="logo">
-              <NuxtImg src="/img/career/AutonicsCI.png" class="logo-img" />
+      <div class="career-content">
+        <div class="career-introduction-box">
+          <div class="company-logo-container">
+            <div class="company-logo-wrapper">
+              <NuxtImg class="logo-img" src="/img/career/AutonicsCI.png" />
             </div>
           </div>
 
-          <div class="carerr-info-box">
+          <div class="career-info-container">
             <div class="company-title">Autonics</div>
-            <div class="working-day">2021.01.01 ~ {{ currentDay }} (현재)</div>
-            <div class="company-info">오토닉스는 산업 자동화 분야의 핵심인 센서, 제어기기, 모션 디바이스, 레이저 마킹 시스템 등</div>
-            <div class="company-info">약 6,000여 종의 제품을 생산, 판매하며 종합적인 솔루션을 제공하고 있는 산업 자동화 전문 기업입니다.</div>
-            <br />
-            <div class="company-info">
+            <div class="working-day">2021년 01월 01일 ~ {{ currentDay }} (현재)</div>
+            <div class="company-desc">
+              오토닉스는 산업 자동화 분야의 핵심인 센서, 제어기기, 모션 디바이스, 레이저 마킹 시스템 등 약 6,000여 종의 제품을 생산, 판매하며 종합적인 솔루션을
+              제공하고 있는 산업 자동화 전문 기업입니다.
+              <br /><br />
               PL/SQL을 사용해 개발된 사내 백오피스 사이트 및 대리점 주문 사이트를 포함한 다양한 B2B 사이트 그리고 C#을 이용해 개발된 공장에서 사용되는 Gathering
               프로그램등을 VUE,NUXT 프레임워크를 사용해 마이그레이션하는 프로젝트에서 프론트엔드와 백엔드 개발을 담당하고 있으며, 개발 완료된 프로젝트에 대한
               유지보수와 리눅스 및 윈도우 서버의 관리 및 배포 작업 또한 맡고 있습니다.
             </div>
 
-            <div class="division" />
-
-            <!-- 개발 이력 -->
-            <div class="career-history" v-for="history in careerHistory">
+            <div class="career-history" v-for="history in careerHistory" :key="history.title">
               <div class="title">{{ history.title }}</div>
               <div class="develop-period">{{ history.devPeriod }}</div>
-              <div>
-                <ul>
-                  <li class="devlop-list" v-for="devHistory in history.devList">
-                    {{ devHistory }}
-                  </li>
-                </ul>
-              </div>
+              <ul class="devlop-history-list" v-for="devHistory in history.devList">
+                <li>{{ devHistory }}</li>
+              </ul>
             </div>
           </div>
         </div>

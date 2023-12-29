@@ -16,7 +16,7 @@ const props = defineProps<{
     <AboutMe :appWidth="appWidth" />
     <Skills :appWidth="appWidth" />
     <Projects />
-    <Career :appWidth="appWidth" />
+    <Career />
   </div>
 </template>
 

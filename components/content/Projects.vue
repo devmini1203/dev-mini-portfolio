@@ -498,6 +498,9 @@ onMounted(() => {
             <SwiperSlide>
               <NuxtImg src="/img/projects/portfolio/projects.png" class="swiper-img" />
             </SwiperSlide>
+            <SwiperSlide>
+              <NuxtImg src="/img/projects/portfolio/career.png" class="swiper-img" />
+            </SwiperSlide>
           </Swiper>
         </div>
 
