@@ -5,7 +5,7 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
     background-color: transparent;
 
     ::v-deep(.header-content) {
@@ -78,7 +78,7 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
     background-color: #ffffff;
 
     ::v-deep(.header-content) {
@@ -132,7 +132,6 @@
       }
     }
   }
-
   .default-footer {
     display: flex;
     justify-content: center;
@@ -157,6 +156,81 @@
     ::v-deep(.footer-copyright-box) {
       color: #ffffff;
       font-weight: bold;
+    }
+  }
+  ::v-deep(.default-navigation-drawer) {
+    border-radius: 10px !important;
+    margin-inline-start: 1rem !important;
+    margin-inline-end: 0.3rem !important;
+    margin-block: 1rem !important;
+    flex: 0 1 auto !important;
+    height: auto !important;
+
+    .el-drawer__header {
+      margin-top: 4px;
+      padding-bottom: 24px;
+      border-bottom: 1px #000000 solid;
+      padding: 28px;
+      margin-bottom: 0px;
+    }
+    .el-drawer__close-btn {
+      font-size: 20px;
+    }
+    .el-drawer__body {
+      padding: 0px;
+    }
+    .title {
+      margin-top: 5px;
+      color: #000000;
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .navigation-drawer-menu-wrapper {
+      font-size: 1.2rem;
+      padding-top: 28px;
+      padding-right: 28px;
+      padding-bottom: 1px;
+      padding-left: 28px;
+
+      .menu-box {
+        cursor: pointer;
+        font-family: 'AppleSDGothicNeoM';
+      }
+    }
+    .navigation-drawer-bottom-content-wrapper {
+      position: absolute;
+      bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      padding-left: 28px;
+
+      .content {
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .icon-wrapper {
+          border-radius: 2rem;
+          background-color: #000000;
+          opacity: 0.8;
+          width: 2rem;
+          height: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 1rem;
+
+          .icon {
+            z-index: 999;
+            width: 1.5rem;
+            height: 1.5rem;
+            color: white;
+          }
+        }
+      }
     }
   }
 }

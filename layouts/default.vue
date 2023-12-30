@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import Header from '@/components/layout/default/Header.vue';
 import Footer from '@/components/layout/default/Footer.vue';
+import NavigationDrawer from '@/components/layout/default/NavigationDrawer.vue';
 
 const props = defineProps<{
   appScrollHeight: number;
@@ -13,6 +14,7 @@ const props = defineProps<{
     <Header :appScrollHeight="appScrollHeight" :appWidth="appWidth" />
     <slot />
     <Footer />
+    <NavigationDrawer :appWidth="appWidth" />
   </div>
 </template>
 

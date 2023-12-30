@@ -6,8 +6,8 @@ const props = defineProps<{
   appWidth: number;
 }>();
 
-const elementsStore = useElementsStore();
 const layoutStore = useLayoutStore();
+const { isNaviDrawer } = storeToRefs(layoutStore);
 
 const myName = ref('Jong Min');
 const portfolioMenu = ref([
@@ -17,7 +17,8 @@ const portfolioMenu = ref([
   { menuName: 'Career', id: 4 }
 ]);
 
-const setContentId = (id: number) => {
+const elementsStore = useElementsStore();
+const moveToContent = (id: number) => {
   if (id === 1) {
     elementsStore.aboutMeRef?.scrollIntoView({ behavior: 'smooth' });
   }
@@ -31,10 +32,8 @@ const setContentId = (id: number) => {
     elementsStore.carerrRef?.scrollIntoView({ behavior: 'smooth' });
   }
 };
-
 const dynamicHeaderclass = computed(() => {
   const aboutMeHeight = elementsStore.aboutMeRef;
-
   const componentTopHeight = Number(aboutMeHeight?.offsetTop);
 
   if (props.appScrollHeight >= componentTopHeight - 100) {
@@ -53,13 +52,13 @@ const dynamicHeaderclass = computed(() => {
       </div>
 
       <div class="portfolio-menu-parent-box" v-show="appWidth >= 730">
-        <div v-for="menu in portfolioMenu" :key="menu.menuName" class="child-box" @click="setContentId(menu.id)">
+        <div v-for="menu in portfolioMenu" :key="menu.menuName" class="child-box" @click="moveToContent(menu.id)">
           {{ menu.menuName }}
         </div>
       </div>
 
       <div v-show="appWidth <= 730" class="hamburger-menu-icon-box">
-        <component :is="IconMenu2" class="icon" />
+        <component :is="IconMenu2" class="icon" @click="() => (isNaviDrawer = true)" />
       </div>
     </div>
   </div>
