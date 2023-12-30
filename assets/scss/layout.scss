@@ -138,20 +138,25 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     height: 200px;
 
     ::v-deep(.footer-icon-box) {
-      padding-top: 10px;
-      padding-bottom: 16px;
+      display: flex;
 
-      .footer-icon {
-        width: 35px;
-        height: 35px;
-        color: #ffffff;
-        padding-left: 10px;
-        padding-right: 10px;
-        cursor: pointer;
+      .footer-icon-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+
+        .footer-icon {
+          width: 35px;
+          height: 35px;
+          color: #ffffff;
+          padding-left: 10px;
+          padding-right: 10px;
+          cursor: pointer;
+        }
       }
     }
 
@@ -217,7 +222,6 @@
         .icon-wrapper {
           border-radius: 2rem;
           background-color: #000000;
-          opacity: 0.8;
           width: 2rem;
           height: 2rem;
           display: flex;

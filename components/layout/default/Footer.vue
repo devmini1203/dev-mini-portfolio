@@ -1,32 +1,27 @@
 <script lang="ts" setup>
 import { IconBrandGithub, IconMail, IconSquareLetterV } from '@tabler/icons-vue';
 
-const footerIcon = ref([
-  { icon: IconBrandGithub, toolTipEffect: '', toolTipContent: '', toolTipPlacement: '' },
-  { icon: IconMail, toolTipEffect: '', toolTipContent: '', toolTipPlacement: '' },
-  { icon: IconSquareLetterV, toolTipEffect: '', toolTipContent: '', toolTipPlacement: '' }
+const footerContent = ref([
+  { icon: IconBrandGithub, tooltipContent: 'Github', path: 'https://github.com/devmini1203' },
+  { icon: IconMail, tooltipContent: 'Mail', path: 'mailto:devmini1203@gmail.com' },
+  { icon: IconSquareLetterV, tooltipContent: 'Velog', path: 'https://velog.io/@devmini1203' }
 ]);
+const navigateToAnotherSite = (path: string) => {
+  navigateTo(path, {
+    open: {
+      target: '_blank'
+    }
+  });
+};
 </script>
 
 <template>
   <div class="default-footer common-gradient-background">
     <div class="footer-icon-box">
-      <el-tooltip class="box-item" effect="light" content="Github" placement="top">
-        <a href="https://github.com/devmini1203" target="_blank">
-          <component :is="IconBrandGithub" class="footer-icon" />
-        </a>
-      </el-tooltip>
-
-      <el-tooltip class="box-item" effect="light" content="Mail" placement="top">
-        <a href="mailto:devmini1203@gmail.com" target="_blank">
-          <component :is="IconMail" class="footer-icon" />
-        </a>
-      </el-tooltip>
-
-      <el-tooltip class="box-item" effect="light" content="Velog" placement="top">
-        <a href="https://velog.io/@devmini1203" target="_blank">
-          <component :is="IconSquareLetterV" class="footer-icon" />
-        </a>
+      <el-tooltip effect="light" :content="content.tooltipContent" placement="top" v-for="content in footerContent" :key="content.path">
+        <div class="footer-icon-wrapper">
+          <component :is="content.icon" class="footer-icon" @click="navigateToAnotherSite(content.path)" />
+        </div>
       </el-tooltip>
     </div>
 
