@@ -1,6 +1,5 @@
 @use 'fonts.scss';
 @use 'content.scss';
-@use 'transition.scss';
 
 html,
 body {
@@ -8,6 +7,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+
+  font-family: 'AppleSDGothicNeoB';
 
   &::-webkit-scrollbar {
     width: 5px;
@@ -18,10 +19,6 @@ body {
   &::-webkit-scrollbar-thumb {
     background-color: #ffffff;
   }
-}
-
-#app {
-  font-family: 'AppleSDGothicNeoB';
 }
 
 /* 그라데이션 백그라운드 animation */
@@ -36,34 +33,9 @@ body {
     background-position: 0% 50%;
   }
 }
-
 /* Banner와 Footer 에 적용될 그라데이션 백그라운드 클래스 */
 .common-gradient-background {
   background: linear-gradient(65deg, #2a153d, #6f41b6, #4e95e2, #18d3a7);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
-}
-
-/* 배너 이동 버튼 스타일 */
-.move-to-top-button-container {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-
-  @keyframes arrowButtonAnimation {
-    from {
-      transform: translatey(5px);
-    }
-    to {
-      transform: translatey(10px);
-    }
-  }
-
-  .arrow-button {
-    width: 50px;
-    height: 50px;
-    color: white;
-    cursor: pointer;
-    animation: arrowButtonAnimation 1s /* 속도 */ linear 0s /* 처음부터 끝까지 일정 속도로 진행 */ infinite alternate; /* 무한 반복 */
-  }
 }

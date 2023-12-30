@@ -2,6 +2,7 @@
 import Header from '@/components/layout/default/Header.vue';
 import Footer from '@/components/layout/default/Footer.vue';
 import NavigationDrawer from '@/components/layout/default/NavigationDrawer.vue';
+import MoveToTopButton from '@/components/layout/MoveToTopButton.vue';
 
 const props = defineProps<{
   appScrollHeight: number;
@@ -15,6 +16,9 @@ const props = defineProps<{
     <slot />
     <Footer />
     <NavigationDrawer :appWidth="appWidth" />
+
+    <!-- 최상단 이동 버튼  -->
+    <MoveToTopButton :appScrollHeight="appScrollHeight" />
   </div>
 </template>
 
