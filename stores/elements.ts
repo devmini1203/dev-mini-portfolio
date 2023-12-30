@@ -7,7 +7,8 @@ export const useElementsStore = defineStore('elements', {
       aboutMeRef: null as HTMLElement | null,
       skillsRef: null as HTMLElement | null,
       projectsRef: null as HTMLElement | null,
-      carerrRef: null as HTMLElement | null
+      carerrRef: null as HTMLElement | null,
+      etcRef: null as HTMLElement | null
     };
   }
 });

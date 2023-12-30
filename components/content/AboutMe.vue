@@ -1,10 +1,6 @@
 <script lang="ts" setup>
 import { IconUser, IconCalendarSmile, IconMapPin, IconPhone, IconMail, IconPencil } from '@tabler/icons-vue';
 
-const props = defineProps<{
-  appWidth: number;
-}>();
-
 const dateOfJoining = 2021;
 const currentYear = new Date().getFullYear();
 

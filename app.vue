@@ -9,7 +9,7 @@ const { y: appScrollHeight } = useWindowScroll();
 <template>
   <div ref="appEl">
     <NuxtLayout :appScrollHeight="appScrollHeight" :appWidth="appWidth">
-      <NuxtPage :appWidth="appWidth" />
+      <NuxtPage />
     </NuxtLayout>
   </div>
 </template>

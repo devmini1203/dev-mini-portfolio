@@ -4,19 +4,17 @@ import Skills from '@/components/content/Skills.vue';
 import Projects from '@/components/content/Projects.vue';
 import Career from '@/components/content/Career.vue';
 import AboutMe from '@/components/content/AboutMe.vue';
-
-const props = defineProps<{
-  appWidth: number;
-}>();
+import Etc from '@/components/content/Etc.vue';
 </script>
 
 <template>
   <div>
-    <Banner :appWidth="appWidth" />
-    <AboutMe :appWidth="appWidth" />
-    <Skills :appWidth="appWidth" />
+    <Banner />
+    <AboutMe />
+    <Skills />
     <Projects />
     <Career />
+    <Etc />
   </div>
 </template>
 

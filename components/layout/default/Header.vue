@@ -14,7 +14,8 @@ const portfolioMenu = ref([
   { menuName: 'About me', id: 1 },
   { menuName: 'Skills', id: 2 },
   { menuName: 'Projects', id: 3 },
-  { menuName: 'Career', id: 4 }
+  { menuName: 'Career', id: 4 },
+  { menuName: 'Etc', id: 5 }
 ]);
 
 const elementsStore = useElementsStore();
@@ -30,6 +31,9 @@ const moveToContent = (id: number) => {
   }
   if (id === 4) {
     elementsStore.carerrRef?.scrollIntoView({ behavior: 'smooth' });
+  }
+  if (id === 5) {
+    elementsStore.etcRef?.scrollIntoView({ behavior: 'smooth' });
   }
 };
 const dynamicHeaderclass = computed(() => {

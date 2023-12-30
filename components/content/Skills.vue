@@ -1,10 +1,6 @@
 <script lang="ts" setup>
 import { IconHelpCircle } from '@tabler/icons-vue';
 
-const props = defineProps<{
-  appWidth: number;
-}>();
-
 const mySkills = ref([
   { skillType: 'FrontEnd' },
   { skillName: 'HTML5', skillImg: '/img/skills/HTML5.png', percentage: 75 },
@@ -40,16 +36,6 @@ const levlInfoText = ref([
   '고급: 코드를 응용해서 구현하는 데 있어 익숙함'
 ]);
 
-const dynamicSkillsClass = computed(() => {
-  /*  if (props.appWidth >= 730) {
-    return 'skills-container';
-  } else {
-    return 'skills-container-minimize';
-  } */
-
-  return 'skills-container';
-});
-
 const elementsStore = useElementsStore();
 const skills = ref<HTMLElement | null>(null);
 onMounted(() => {
@@ -58,7 +44,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div :class="dynamicSkillsClass" ref="skills">
+  <div class="skills-container" ref="skills">
     <div class="skills-content-box">
       <div class="title-box">
         <span class="title"> SKILLS </span>

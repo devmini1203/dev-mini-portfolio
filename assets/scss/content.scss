@@ -13,7 +13,7 @@
         opacity: 1;
       }
       100% {
-        top: 100vh;
+        top: 95vh;
         transform: rotate(360deg) rotateY(180deg);
         opacity: 0.7;
       }
@@ -25,7 +25,7 @@
         opacity: 1;
       }
       100% {
-        top: 100vh;
+        top: 95vh;
         transform: rotate(-360deg) rotateY(-180deg);
         opacity: 0.5;
       }
@@ -997,6 +997,167 @@
             padding-inline-start: 12px;
           }
         }
+      }
+    }
+  }
+}
+/* etc */
+.etc-container {
+  background: #000000;
+  width: 100%;
+
+  .etc-content-box {
+    max-width: 71.25rem;
+    padding: 6rem 2rem;
+    margin: 0 auto;
+
+    .title-box {
+      font-size: 3rem;
+      width: 100%;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0 6rem 0;
+
+      .title {
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-image: linear-gradient(90deg, #78ace4, #6f41b6);
+        border-image-slice: 1;
+      }
+    }
+
+    .my-certificate-content-cotainer {
+      .title {
+        font-size: 1.8rem;
+        text-align: center;
+        padding-bottom: 3rem;
+        color: #ffffff;
+      }
+
+      .certificate-paper-container {
+        position: relative;
+
+        width: 284px;
+        height: 236px;
+        padding: 3px;
+        background-color: #ffffff;
+        border: 1px solid #6f6f6f;
+        border-radius: 1rem;
+        margin-bottom: 30px;
+
+        .outer-boder-container {
+          padding: 0px;
+          border: 3px solid #58595b;
+          border-radius: 1rem;
+          height: calc(100% - 6px);
+
+          .logo-wrapper {
+            display: flex;
+            justify-content: center;
+
+            .logo-img {
+              width: 125px;
+              height: 80px;
+              padding-top: 2rem;
+            }
+            .logo-img-etest {
+              width: 125px;
+              height: 40px;
+              padding-top: 3.5rem;
+            }
+          }
+
+          .certificate-desc-container {
+            padding-top: 2rem;
+
+            .certificate-name {
+              color: black;
+              font-size: 1rem;
+              text-align: center;
+              padding-bottom: 10px;
+              font-family: 'AppleSDGothicNeoH';
+            }
+
+            .certicate-acquisition-date {
+              color: black;
+              font-size: 14px;
+              text-align: center;
+            }
+          }
+
+          .certificate-desc-container-etest {
+            padding-top: 3rem;
+
+            .certificate-name {
+              color: black;
+              font-size: 1rem;
+              text-align: center;
+              padding-bottom: 10px;
+              font-family: 'AppleSDGothicNeoH';
+            }
+
+            .certicate-acquisition-date {
+              color: black;
+              font-size: 14px;
+              text-align: center;
+            }
+          }
+        }
+
+        .parent-medal {
+          background: #fadd40;
+          width: 20px;
+          height: 20px;
+          top: 10px;
+          left: 10px;
+          position: absolute;
+          padding: 5px 5px 5px 5px;
+          font-size: 2em;
+          border-radius: 50%;
+          z-index: 30;
+
+          .child-medal {
+            background: linear-gradient(to bottom right, #f9ad0e 50%, #e89f06 50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+          }
+        }
+        .ribbon1 {
+          border-width: 6px 10px;
+          border-color: darken(#fc402d, 10%) darken(#fc402d, 10%) transparent darken(#fc402d, 10%);
+          left: 5px;
+          transform: rotate(30deg) translateZ(-32px);
+          display: block;
+          position: absolute;
+          border-style: solid;
+          border-width: 6px 8px;
+          width: 0;
+          height: 15px;
+          top: 30px;
+        }
+        .ribbon2 {
+          display: block;
+          position: absolute;
+          border-style: solid;
+          border-width: 6px 8px;
+          width: 0;
+          height: 15px;
+          top: 29px;
+          left: 28px;
+          border-color: darken(#fc402d, 10%) darken(#fc402d, 10%) transparent darken(#fc402d, 10%);
+          transform: rotate(-30deg) translateZ(-48px);
+        }
+      }
+    }
+    .my-language-skills-content-conatiner {
+      .title {
+        font-size: 1.8rem;
+        text-align: center;
+        padding-top: 3rem;
+        color: #ffffff;
       }
     }
   }

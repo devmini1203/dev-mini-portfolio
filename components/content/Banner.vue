@@ -2,15 +2,15 @@
 import { IconChevronsDown } from '@tabler/icons-vue';
 
 const elementsStore = useElementsStore();
-const bannerRef = ref<HTMLElement | null>(null);
+const banner = ref<HTMLElement | null>(null);
 
 onMounted(() => {
-  elementsStore.bannerRef = bannerRef.value;
+  elementsStore.bannerRef = banner.value;
 });
 </script>
 
 <template>
-  <div class="banner-container common-gradient-background" ref="bannerRef">
+  <div class="banner-container common-gradient-background" ref="banner">
     <div class="confetti-container">
       <div class="confetti" v-for="n in 40"></div>
     </div>
