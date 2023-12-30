@@ -11,6 +11,10 @@ onMounted(() => {
 
 <template>
   <div class="banner-container common-gradient-background" ref="bannerRef">
+    <div class="confetti-container">
+      <div class="confetti" v-for="n in 40"></div>
+    </div>
+
     <div class="banner-title-box">
       <div class="top-text-box">WELCOME!</div>
 
