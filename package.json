@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "homepage": "https://devmini1203.github.io/dev_mini_portfolio/",
-    "deploy": "gh-pages -d .output/public/"
+    "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.6",
