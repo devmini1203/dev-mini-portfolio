@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ['@element-plus/nuxt', '@nuxt/image', 'dayjs-nuxt', '@pinia/nuxt'],
   ssr: false,
+  nitro: {
+    preset: 'github-pages'
+  },
   app: {
     baseURL: '/dev_mini_portfolio/',
     head: {
