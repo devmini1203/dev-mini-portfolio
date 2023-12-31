@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     baseURL: '/dev_mini_portfolio/',
     head: {
       title: 'JM Portfolio',
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/dev_mini_portfolio/favicon.ico' }],
       meta: [
         {
           name: 'viewport',
