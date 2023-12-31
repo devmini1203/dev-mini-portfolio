@@ -2,7 +2,7 @@
 const myCertificate = ref([
   {
     name: '정보처리기사',
-    acquisitionDate: '2022년 08월 28일',
+    acquisitionDate: '2020년 08월 28일',
     img: '/img/etc/q-net.png'
   },
   {
