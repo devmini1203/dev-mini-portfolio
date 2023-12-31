@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     baseURL: '/dev_mini_portfolio/',
+    buildAssetsDir: 'dev_mini_portfolio',
     head: {
       title: 'JM Portfolio',
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/dev_mini_portfolio/favicon.ico' }],
