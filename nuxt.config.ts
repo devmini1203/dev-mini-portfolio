@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ['@element-plus/nuxt', '@nuxt/image', 'dayjs-nuxt', '@pinia/nuxt'],
   ssr: false,
   app: {
-    baseURL: '/dev_mini_portfolio',
+    baseURL: '/dev_mini_portfolio/',
     head: {
       title: 'JM Portfolio',
       meta: [
