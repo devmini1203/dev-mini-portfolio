@@ -53,22 +53,22 @@ onMounted(() => {
             }"
           >
             <SwiperSlide>
-              <NuxtImg src="/img/projects/gathering/web_gathering_01.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/gathering/web_gathering_01.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/gathering/web_gathering_02.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/gathering/web_gathering_02.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/gathering/web_gathering_03.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/gathering/web_gathering_03.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/gathering/web_gathering_04.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/gathering/web_gathering_04.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/gathering/web_gathering_05.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/gathering/web_gathering_05.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/gathering/web_gathering_06.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/gathering/web_gathering_06.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
           </Swiper>
 
@@ -160,25 +160,25 @@ onMounted(() => {
             }"
           >
             <SwiperSlide>
-              <NuxtImg src="/img/projects/order/web_order_01.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/order/web_order_01.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/order/web_order_02.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/order/web_order_02.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/order/web_order_03.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/order/web_order_03.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/order/web_order_04.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/order/web_order_04.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/order/web_order_05.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/order/web_order_05.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/order/web_order_06.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/order/web_order_06.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/order/web_order_07.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/order/web_order_07.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
           </Swiper>
 
@@ -267,37 +267,37 @@ onMounted(() => {
             }"
           >
             <SwiperSlide>
-              <NuxtImg src="/img/projects/hr/hr_renewal_01.png" />
+              <NuxtImg src="/img/projects/hr/hr_renewal_01.png" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/hr/hr_renewal_02.png" />
+              <NuxtImg src="/img/projects/hr/hr_renewal_02.png" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/hr/hr_renewal_03.png" />
+              <NuxtImg src="/img/projects/hr/hr_renewal_03.png" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/hr/hr_renewal_04.png" />
+              <NuxtImg src="/img/projects/hr/hr_renewal_04.png" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/hr/hr_renewal_05.png" />
+              <NuxtImg src="/img/projects/hr/hr_renewal_05.png" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/hr/hr_renewal_06.png" />
+              <NuxtImg src="/img/projects/hr/hr_renewal_06.png" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/hr/hr_renewal_07.png" />
+              <NuxtImg src="/img/projects/hr/hr_renewal_07.png" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/hr/hr_renewal_08.png" />
+              <NuxtImg src="/img/projects/hr/hr_renewal_08.png" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/hr/hr_renewal_09.png" />
+              <NuxtImg src="/img/projects/hr/hr_renewal_09.png" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/hr/hr_renewal_10.png" />
+              <NuxtImg src="/img/projects/hr/hr_renewal_10.png" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/hr/hr_renewal_11.png" />
+              <NuxtImg src="/img/projects/hr/hr_renewal_11.png" provider="myProvider" />
             </SwiperSlide>
           </Swiper>
 
@@ -390,16 +390,16 @@ onMounted(() => {
             }"
           >
             <SwiperSlide>
-              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_01.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_01.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_02.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_02.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_03.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_03.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_04.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/order_admin_mi/web_order_admin_mi_04.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
           </Swiper>
 
@@ -487,19 +487,19 @@ onMounted(() => {
             }"
           >
             <SwiperSlide>
-              <NuxtImg src="/img/projects/portfolio/banner.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/portfolio/banner.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/portfolio/aboutme.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/portfolio/aboutme.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/portfolio/skills.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/portfolio/skills.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/portfolio/projects.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/portfolio/projects.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
             <SwiperSlide>
-              <NuxtImg src="/img/projects/portfolio/career.png" class="swiper-img" />
+              <NuxtImg src="/img/projects/portfolio/career.png" class="swiper-img" provider="myProvider" />
             </SwiperSlide>
           </Swiper>
         </div>

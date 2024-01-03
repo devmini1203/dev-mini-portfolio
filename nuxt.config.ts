@@ -6,9 +6,14 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'github-pages'
   },
-  /*   image: {
-    dir: 'assets'
-  }, */
+  image: {
+    providers: {
+      myProvider: {
+        name: 'myProvider',
+        provider: '@/providers/my-provider.ts'
+      }
+    }
+  },
   app: {
     baseURL: '/dev_mini_portfolio/',
     head: {

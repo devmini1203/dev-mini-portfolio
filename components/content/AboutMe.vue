@@ -82,7 +82,7 @@ onMounted(() => {
 
       <div class="my-introduction-content-box">
         <div class="my-profile-img-box">
-          <img class="img" src="/assets/img/aboutme/profile_image.jpg" />
+          <NuxtImg class="img" src="/img/aboutme/profile_image.jpg" provider="myProvider" />
         </div>
 
         <div class="my-story-text-box">

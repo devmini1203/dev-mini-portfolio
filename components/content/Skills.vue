@@ -80,7 +80,7 @@ onMounted(() => {
           </div>
 
           <div class="skill-desc" v-if="skills.skillName">
-            <NuxtImg class="img" :src="skills.skillImg" sizes="30" />
+            <NuxtImg class="img" :src="skills.skillImg" provider="myProvider" />
             <span class="text"> {{ skills.skillName }} </span>
           </div>
 

@@ -65,8 +65,8 @@ onMounted(() => {
               <div class="certificate-paper-container">
                 <div class="outer-boder-container">
                   <div class="logo-wrapper">
-                    <NuxtImg :src="certificate.img" v-if="certificate.name === 'E-Test(e-Professionals)'" class="logo-img-etest" />
-                    <NuxtImg :src="certificate.img" v-else class="logo-img" />
+                    <NuxtImg :src="certificate.img" v-if="certificate.name === 'E-Test(e-Professionals)'" class="logo-img-etest" provider="myProvider" />
+                    <NuxtImg :src="certificate.img" v-else class="logo-img" provider="myProvider" />
                   </div>
 
                   <div class="certificate-desc-container-etest" v-if="certificate.name === 'E-Test(e-Professionals)'">

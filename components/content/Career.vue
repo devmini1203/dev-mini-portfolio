@@ -93,7 +93,7 @@ onMounted(() => {
         <div class="career-introduction-box">
           <div class="company-logo-container">
             <div class="company-logo-wrapper">
-              <NuxtImg class="logo-img" src="/img/career/AutonicsCI.png" />
+              <NuxtImg class="logo-img" src="/img/career/AutonicsCI.png" provider="myProvider" />
             </div>
           </div>
 
