@@ -298,6 +298,10 @@
     .bottom-text-box {
       animation-duration: 2s;
       animation-name: bottomtextAnimation;
+
+      @media screen and (max-width: 440px) {
+        padding-top: 1rem;
+      }
     }
 
     @keyframes topTextAnimation {
