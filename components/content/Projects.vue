@@ -244,8 +244,6 @@ onMounted(() => {
       </div>
 
       <!-- 직접직 인사 정보 조회 사이트 -->
-      <!--     :centeredSlides="true"
-            :slidesPerView="2" -->
       <div class="projects-box">
         <div class="projects-img-box">
           <Swiper
