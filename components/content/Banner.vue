@@ -12,7 +12,7 @@ onMounted(() => {
 <template>
   <div class="banner-container common-gradient-background" ref="banner">
     <div class="confetti-container">
-      <div class="confetti" v-for="n in 40"></div>
+      <div class="confetti" v-for="n in 38"></div>
     </div>
 
     <div class="banner-title-box">
