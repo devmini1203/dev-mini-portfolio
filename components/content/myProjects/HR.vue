@@ -16,6 +16,7 @@ const swiperModule = [Autoplay, Pagination, Navigation, EffectFade];
         :loop="true"
         :effect="'fade'"
         :navigation="true"
+        :centered-slides="true"
         :modules="swiperModule"
         :autoplay="{
           delay: 4000,
@@ -31,37 +32,37 @@ const swiperModule = [Autoplay, Pagination, Navigation, EffectFade];
         }"
       >
         <SwiperSlide>
-          <NuxtImg src="/img/projects/hr/hr_renewal_01.png" provider="myProvider" />
+          <NuxtImg src="/img/projects/hr/hr_renewal_01.png" provider="myProvider" class="swiper-img-hr" />
         </SwiperSlide>
         <SwiperSlide>
-          <NuxtImg src="/img/projects/hr/hr_renewal_02.png" provider="myProvider" />
+          <NuxtImg src="/img/projects/hr/hr_renewal_02.png" provider="myProvider" class="swiper-img-hr" />
         </SwiperSlide>
         <SwiperSlide>
-          <NuxtImg src="/img/projects/hr/hr_renewal_03.png" provider="myProvider" />
+          <NuxtImg src="/img/projects/hr/hr_renewal_03.png" provider="myProvider" class="swiper-img-hr" />
         </SwiperSlide>
         <SwiperSlide>
-          <NuxtImg src="/img/projects/hr/hr_renewal_04.png" provider="myProvider" />
+          <NuxtImg src="/img/projects/hr/hr_renewal_04.png" provider="myProvider" class="swiper-img-hr" />
         </SwiperSlide>
         <SwiperSlide>
-          <NuxtImg src="/img/projects/hr/hr_renewal_05.png" provider="myProvider" />
+          <NuxtImg src="/img/projects/hr/hr_renewal_05.png" provider="myProvider" class="swiper-img-hr" />
         </SwiperSlide>
         <SwiperSlide>
-          <NuxtImg src="/img/projects/hr/hr_renewal_06.png" provider="myProvider" />
+          <NuxtImg src="/img/projects/hr/hr_renewal_06.png" provider="myProvider" class="swiper-img-hr" />
         </SwiperSlide>
         <SwiperSlide>
-          <NuxtImg src="/img/projects/hr/hr_renewal_07.png" provider="myProvider" />
+          <NuxtImg src="/img/projects/hr/hr_renewal_07.png" provider="myProvider" class="swiper-img-hr" />
         </SwiperSlide>
         <SwiperSlide>
-          <NuxtImg src="/img/projects/hr/hr_renewal_08.png" provider="myProvider" />
+          <NuxtImg src="/img/projects/hr/hr_renewal_08.png" provider="myProvider" class="swiper-img-hr" />
         </SwiperSlide>
         <SwiperSlide>
-          <NuxtImg src="/img/projects/hr/hr_renewal_09.png" provider="myProvider" />
+          <NuxtImg src="/img/projects/hr/hr_renewal_09.png" provider="myProvider" class="swiper-img-hr" />
         </SwiperSlide>
         <SwiperSlide>
-          <NuxtImg src="/img/projects/hr/hr_renewal_10.png" provider="myProvider" />
+          <NuxtImg src="/img/projects/hr/hr_renewal_10.png" provider="myProvider" class="swiper-img-hr" />
         </SwiperSlide>
         <SwiperSlide>
-          <NuxtImg src="/img/projects/hr/hr_renewal_11.png" provider="myProvider" />
+          <NuxtImg src="/img/projects/hr/hr_renewal_11.png" provider="myProvider" class="swiper-img-hr" />
         </SwiperSlide>
       </Swiper>
 
@@ -131,4 +132,12 @@ const swiperModule = [Autoplay, Pagination, Navigation, EffectFade];
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n + 1) {
+  background-color: #d3dce6;
+}
+</style>
