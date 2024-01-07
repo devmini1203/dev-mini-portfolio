@@ -91,10 +91,10 @@ onMounted(() => {
         </div>
 
         <!-- 어학 성적 -->
-        <div class="my-language-skills-content-conatiner">
+        <!--  <div class="my-language-skills-content-conatiner">
           <div class="title">어학 성적</div>
           <div class="title">없음</div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

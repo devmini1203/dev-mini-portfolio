@@ -60,19 +60,13 @@ const swiperModule = [Autoplay, Pagination, Navigation, EffectFade];
       </div>
 
       <div class="project-explan-box">
-        <p>
-          오토닉스는 생산직 근로자분들에게 C#으로 개발된 실적 등록 및 공정 관리 프로그램을 윈도우 테블릿에서 제공하고 있었습니다. 그러나 계속되는 윈도우
-          테블릿의 가격 상승 및 향후 공급 불안정이 예상되어, 비교적 저렴한 안드로이드 테블릿으로의 전환이 필요하게 되었습니다.
-        </p>
-        <p>
-          이에 따라, <span class="skill-emphasize">Vue2</span> 프레임워크와 UI프레임워크인 <span class="skill-emphasize">BootstrapVue</span>를 사용하여 C#
-          프로그램을 웹 환경으로 전환하는 프로젝트에서 프론트엔드 개발을 맡아 진행하게 되었습니다.
-        </p>
+        <p>C#으로 개발된 실적 등록 및 공정 관리 프로그램을 웹 환경으로 전환하는 프로젝트에서 프론트엔드 개발을 맡아 진행하게 되었습니다.</p>
 
         <p>
+          <span class="skill-emphasize">Vue2</span> 프레임워크와 UI프레임워크인 <span class="skill-emphasize">BootstrapVue</span>를 사용하여 개발하였으며,
           카카오 오븐을 통한 UI 설계부터 시작해 다양한 프론트엔드 비지니스 로직을 작성하며 VUE2 프레임워크에 익숙해질 수 있었고 다양한 모바일 환경을 위한 반응형
-          UI 구현을 진행해보는 좋은 경험도 할 수 있었으며
-          <span class="skill-emphasize">SVN</span>을 이용한 협업을 통해, 형상관리의 중요성도 몸소 느낄 수 있었습니다.
+          UI 구현을 진행해보는 좋은 경험도 할 수 있었으며 <span class="skill-emphasize">SVN</span>을 이용한 협업을 통해, 형상관리의 중요성도 몸소 느낄 수
+          있었습니다.
         </p>
 
         <p>또한 현장 관리자들과의 소통을 통해, 다양한 요구 사항 및 오류에 대응하며 CS와 QA 업무의 중요성도 느끼게 되었습니다.</p>
