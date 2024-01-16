@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "homepage": "https://devmini1203.github.io/dev_mini_portfolio/",
+    "homepage": "https://devmini1203.github.io/dev-mini-portfolio/",
     "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {

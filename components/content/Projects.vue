@@ -9,7 +9,7 @@ const elementsStore = useElementsStore();
 const projects = ref<HTMLElement | null>(null);
 
 const navigateToGithub = () => {
-  navigateTo('https://github.com/devmini1203/dev_mini_portfolio', {
+  navigateTo('https://github.com/devmini1203/dev-mini-portfolio', {
     open: {
       target: '_blank'
     }

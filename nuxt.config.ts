@@ -15,10 +15,10 @@ export default defineNuxtConfig({
     }
   },
   app: {
-    baseURL: '/dev_mini_portfolio/',
+    baseURL: '/dev-mini-portfolio/',
     head: {
       title: 'JM Portfolio',
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/dev_mini_portfolio/favicon.ico' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/dev-mini-portfolio/favicon.ico' }],
       meta: [
         {
           name: 'viewport',

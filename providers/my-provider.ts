@@ -13,6 +13,6 @@ export const getImage: ProviderGetImage = (src, { modifiers = {}, baseURL } = {}
   const operations = operationsGenerator(modifiers);
 
   return {
-    url: joinURL('/dev_mini_portfolio', src)
+    url: joinURL('/dev-mini-portfolio', src)
   };
 };
