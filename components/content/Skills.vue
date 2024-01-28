@@ -23,10 +23,12 @@ const mySkills = ref([
   { skillName: 'Nginx', skillImg: '/img/skills/Nginx.png', percentage: 70 },
   { skillName: 'PM2', skillImg: '/img/skills/PM2.png', percentage: 60 },
   { skillName: 'Tomcat', skillImg: '/img/skills/Tomcat.png', percentage: 65 },
+  { skillName: 'Vercel', skillImg: '/img/skills/Vercel.png', percentage: 30 },
   { skillType: 'Version Controll' },
   { skillName: 'SVN', skillImg: '/img/skills/SVN.png', percentage: 70 },
   { skillName: 'Git', skillImg: '/img/skills/Git.png', percentage: 65 },
-  { skillName: 'GitHub', skillImg: '/img/skills/GitHub.png', percentage: 65 }
+  { skillName: 'GitHub', skillImg: '/img/skills/GitHub.png', percentage: 65 },
+  { skillName: 'GitLab', skillImg: '/img/skills/GitLab.png', percentage: 30 }
 ]);
 
 const levlInfoText = ref([
