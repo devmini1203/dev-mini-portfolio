@@ -23,16 +23,16 @@ const mySkills = ref([
   { skillName: 'Nginx', skillImg: '/img/skills/Nginx.png', percentage: 70 },
   { skillName: 'PM2', skillImg: '/img/skills/PM2.png', percentage: 60 },
   { skillName: 'Tomcat', skillImg: '/img/skills/Tomcat.png', percentage: 65 },
-  { skillName: 'Ubuntu', skillImg: '/img/skills/Ubuntu.png', percentage: 40 },
-  { skillName: 'Vercel', skillImg: '/img/skills/Vercel.png', percentage: 45 },
-  { skillName: 'Docker', skillImg: '/img/skills/Docker.png', percentage: 30 },
+  { skillName: 'Ubuntu', skillImg: '/img/skills/Ubuntu.png', percentage: 58 },
+  { skillName: 'Vercel', skillImg: '/img/skills/Vercel.png', percentage: 55 },
+  { skillName: 'Docker', skillImg: '/img/skills/Docker.png', percentage: 40 },
   { skillType: 'Version Controll' },
   { skillName: 'SVN', skillImg: '/img/skills/SVN.png', percentage: 70 },
   { skillName: 'Git', skillImg: '/img/skills/Git.png', percentage: 65 },
   { skillName: 'GitHub', skillImg: '/img/skills/GitHub.png', percentage: 65 },
   { skillName: 'GitLab', skillImg: '/img/skills/GitLab.png', percentage: 30 },
   { skillType: 'Communication' },
-  { skillName: 'Notion', skillImg: '/img/skills/Notion.png', percentage: 35 },
+  { skillName: 'Notion', skillImg: '/img/skills/Notion.png', percentage: 45 },
   { skillName: 'Slack', skillImg: '/img/skills/Slack.png', percentage: 50 }
 ]);
 
